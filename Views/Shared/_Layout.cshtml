@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVC</title>
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MVC.styles.css" asp-append-version="true" />
+    <!-- Import font Poppins từ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KEY.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex w-100 mx-auto p-2">
+
+                <div class="d-flex me-auto align-items-center">
+                    <img src="~/img/map_pin.png" alt="icon" class="me-1">
+                    <span class="gray-smal-text">Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+                </div>
+
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+        <hr class="m-0" style="pos;">
+        <div class="container">
+            <div class="row mt-2">
+                <a class="nav-link col-4 text-center " asp-area="" asp-controller="Home" asp-action="Index">
+                    <div class="d-flex align-items-center mx-auto p-2">
+                        <img src="~/img/icon.png" alt="icon" class="me-1" height="32px">
+                        <span class="title-dark-large">Ecobazar</span>
+                    </div>
+                </a>
+                <div class="col-8 col-md-5 text-center">
+                    <div class="d-flex align-items-center p-2">
+                        <div class="input-group">
+                            <!-- Icon bên trái -->
+                            <span class="input-group-text bg-white border-end-0">
+                                <img src="~/img/search-icon.png" alt="icon" class="me-1" height="16px">
+                            </span>
+                            <!-- Input -->
+                            <input type="text" class="form-control form-control-radius" placeholder="Search">
+                            <!-- Button bên phải -->
+                            <button class="btn btn-primary green-bg-color  "
+                                style="font-weight:500; border:none;">Search</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 d-none d-md-flex justify-content-end align-items-center p-2">
+                    <img src="~/img/phone-icon.png" alt="icon" class="me-2" height="32px">
+                    <div class="text-start">
+                        <span class="text-secondary d-block gray-smal-text">Customer Services</span>
+                        <span class="title-dark-medium">(219) 555-0114</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <partial name="_Navigation" />
+    </header>
+    <div class="container d-flex flex-column min-vh-90">
+        <main role="main" class="content flex-grow-1">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="mt-5">
+        <div class="bg-cream-color ">
+            <div class="container">
+                <div class="bg-cream-color">
+                    <div class="row mt-2">
+                        <a class="nav-link col-3 text-center " asp-area="" asp-controller="Home" asp-action="Index">
+                            <div class="d-flex align-items-center mx-auto p-2">
+                                <img src="~/img/icon.png" alt="icon" class="me-1" height="32px">
+                                <span class="title-dark-large">Ecobazar</span>
+                            </div>
+                        </a>
+                        <div class="col-4 col-md-4 d-flex align-items-center justify-content-start">
+                            <div class="text-start" style="line-height: 1.2;">
+                                <span class="title-dark-medium d-block">Subcribe our Newsletter</span>
+                                <span class="gray-smal-text d-block">Pellentesque eu nibh eget mauris congue mattis
+                                    matti.</span>
+                            </div>
+                        </div>
+                        <div class="col-5 d-none d-md-flex justify-content-start align-items-center p-2">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="input-group rounded-pill">
+                                        <input type="email" class="form-control border-0 rounded-pill ps-3"
+                                            placeholder="Your email address">
+                                        <button
+                                            class="btn btn-success rounded-pill px-4 fw-bold green-bg-color">Subscribe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3  text-white">
+                        <h5 class="fw-bold">About Shopery</h5>
+                        <p class="gray-smal-text">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+                            dui, eget bibendum magna congue nec.</p>
+                        <div>(219) 555-0114 or Proxy@gmail.com</div>
+                    </div>
+                    <div class="col-2 text-white">
+                        <h5 class="fw-bold">My Account</h5>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">My Account</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">Order History</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">Shoping Cart</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">Wishlist</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">Settings</a>
+
+                    </div>
+                    <div class="col-2 text-white">
+                        <h5 class="fw-bold">Helps</h5>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">Contact</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">Faqs</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
+                            asp-action="Index">Terms</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="" asp-controller="Home"
+                            asp-action="Privacy">Privacy Policy</a>
+
+                    </div>
+                    <div class="col-2 text-white">
+                        <h5 class="fw-bold">Proxy</h5>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="" asp-controller="Home"
+                            asp-action="Index">About</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="" asp-controller="Home"
+                            asp-action="Index">Shop</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="" asp-controller="Home"
+                            asp-action="Index">Product</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="" asp-controller="Home"
+                            asp-action="Index">Products Details</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="" asp-controller="Home"
+                            asp-action="Index">Track Order</a>
+                    </div>
+                    <div class="col-3 text-white">
+                        <h5 class="fw-bold">Download our Mobile App</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <img src="~/img/appstore-img-dowload.png" alt="icon" class="img-fluid"
+                                style="max-width: 100px;">
+                            <img src="~/img/google-play-img-dowload.png" alt="icon" class="img-fluid"
+                                style="max-width: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-white">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 text-white">
+                        <div class="d-flex justify-content-start gap-4  social-icons">
+                            <a><i class="fa-brands fa-facebook-f"></i></a>
+                            <a><i class="fa-brands fa-twitter"></i></a>
+                            <a><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <p class="gray-smal-text">Ecobazar eCommerce © 2021. All Rights Reserved</p>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-flex flex-wrap justify-content-center gap-1">
+                            <img class="img-fluid" src="~/img/apple-pay.png" alt="icon">
+                            <img class="img-fluid" src="~/img/visa.png" alt="icon">
+                            <img class="img-fluid" src="~/img/discover.png" alt="icon">
+                            <img class="img-fluid" src="~/img/master-card.png" alt="icon">
+                            <img class="img-fluid" src="~/img/payment.png" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

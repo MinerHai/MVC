@@ -1,0 +1,14 @@
+﻿@using App.Models
+@using Microsoft.EntityFrameworkCore
+@using System.Data
+@inject AppDbContext dbContext
+@{
+    ViewData["Title"] = "Database Info";
+    var connect = dbContext.Database.GetDbConnection();
+    var dbName = connect.Database;
+    var canConnect = dbContext.Database.CanConnect();
+}
+
+
+<h2>@ViewData["Title"]</h2>
+<h3> @dbName</h3>

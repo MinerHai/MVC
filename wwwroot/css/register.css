@@ -1,0 +1,16 @@
+.box-shadow-custom {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Bo góc nhẹ nếu muốn */
+    align-items: center;
+  }
+
+.input-boxshadow{
+    background-color: red;
+}
+.btn-boxshadow{
+    background-color: #00B207;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
