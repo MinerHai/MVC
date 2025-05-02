@@ -1,0 +1,146 @@
+@model App.Models.Post
+@using App.Models
+@using App.Models.Blog
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.IdentityModel.Tokens
+@using static App.Components.CategorySideBar
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@{
+    ViewData["Title"] = Model.Title;
+    Layout = "_LayoutBlogDetail.cshtml"; // Sử dụng layout cho chi tiết bài viết
+                                         // Khởi tạo ViewModel cho form bình luận
+    var commentViewModel = new CommentViewModel { PostId = Model.PostId };
+}
+@{
+    List<Category> categories = ViewBag.categories as List<Category> ?? new List<Category>();
+    Category category = ViewBag.category as Category ?? new Category();
+    var categorySlug = ViewBag.categorySlug ?? "";
+    var postCounts = ViewBag.PostCounts as Dictionary<int, int> ?? new Dictionary<int, int>();
+    var recentPosts = ViewBag.RecentPosts as List<Post> ?? new List<Post>();
+}
+
+@section SideBar {
+    @await Component.InvokeAsync("CategorySideBar", new CategorySideBarData(){
+    Categories = categories,
+categorySlug = categorySlug,
+PostCounts = postCounts,
+RecentPosts = recentPosts
+})
+}
+<article class="blog-detail">
+    @if (@Model.FileName.IsNullOrEmpty())
+    {
+        <img src="~/img/no-img.png" alt="Blog main image" class="main-image">
+    }
+    else
+    {
+        <img src="/contents/Posts/@Model.FileName" alt="Blog main image" class="main-image">
+
+    }
+
+    <div class="blog-info">
+        <span class="info-item">
+            <img src="~/img/tag-icon.svg" alt="Tag icon"> Food
+        </span>
+        <span class="info-item">
+            <img src="~/img/user-icon.svg" alt="User icon"> By Admin
+        </span>
+        <span class="info-item comment-count">
+            <img src="~/img/comment-icon.svg" alt="Comment icon"> 65 Comments
+        </span>
+    </div>
+
+    <h1 class="blog-title">@Model.Title</h1>
+
+    <section class="author-share-section">
+        <div class="author-info">
+            <img src="/contents/Users/@Model.Author.AvatarImg" alt="Author Cameron Williamson" class="author-image">
+            <div class="author-details">
+                <span class="author-name">@Model.Author.UserName</span>
+                <div class="post-meta">
+                    <span>@Model.DateUpdated.ToString("MMM dd, yyyy")</span>
+                    <span>•</span>
+                    <span>6 min read</span>
+                </div>
+            </div>
+        </div>
+        <div class="social-media-icons">
+            <a href="#" class="social-icon text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon text-decoration-none"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon text-decoration-none"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon text-decoration-none"><i class="fa fa-link"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="blog-content">
+        <p class="highlight">@Model.Title</p>
+        <p> @Html.Raw(Model.Content) </p>
+    </div>
+</article>
+
+
+<section class="comments-section">
+    <div class="leave-comment-form">
+        <h2 class="leave-comment-title">Leave a Comment</h2>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            
+                <form asp-action="AddComment" asp-controller="ViewPost" asp-area="Blog" method="post" class="mb-4">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="@commentViewModel.PostId" />
+                    <div class="form-group">
+                        <label asp-for="@commentViewModel.Content" class="control-label">Message</label>
+                        <textarea asp-for="@commentViewModel.Content" placeholder="Write your comment here…"></textarea>
+                        <span asp-validation-for="@commentViewModel.Content" class="text-danger"></span>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Save my name and email in this browser for the next time I comment.</label>
+                    </div>
+                    <button type="submit" class="submit-comment-btn">Post Comments</button>
+                </form>
+            
+        }
+        else
+        {
+            <p>Vui lòng <a asp-area="Identity" asp-action="Login" asp-controller="Account"
+                    asp-route-returnUrl="@Url.Action("Detail", "ViewPost", new { area = "Blog", slug = Model.Slug })">đăng
+                    nhập</a>
+                để bình luận.</p>
+    
+        }
+    </div>
+    <div class="comments-list">
+        <h2 class="comments-title">Comments</h2>
+        @if (Model.Comments != null && Model.Comments.Any())
+        {
+            @foreach (var comment in Model.Comments.OrderByDescending(c => c.DateCreated))
+            {
+                <div class="comment-item">
+                    <div class="comment-avatar">
+                        <img src="/contents/Users/@comment.Author.AvatarImg" alt="avatar">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-meta">
+                            <span class="comment-author">@comment.Author.UserName</span>
+                            <span>•</span>
+                            <span class="comment-date">@comment.DateCreated.ToString("MMM dd, yyyy")</span>
+                        </div>
+                        <p class="comment-text">@comment.Content</p>
+                    </div>
+                </div>
+            }
+
+        }
+        else
+        {
+            <p>Chưa có bình luận nào.</p>
+        }
+        <button class="load-more-comments">Load More</button>
+    </div>
+
+
+</section>

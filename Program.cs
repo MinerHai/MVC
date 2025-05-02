@@ -3,12 +3,14 @@ using App.Models;
 using App.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration; 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages(); // Thêm dịch vụ Razor Pages
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -28,7 +30,8 @@ builder.Services.Configure<MailSettings>(mailsetting);
 builder.Services.AddTransient<IEmailSender, SendMailService>(); // Gửi mail
 //Identity Options
 builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
-
+//
+builder.Services.AddTransient<CartServices>();
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("ViewManageMenu", builder =>{
@@ -84,6 +87,12 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true; // Kiểm tra tính năng gia hạn cookie
 });
 
+builder.Services.AddDistributedMemoryCache();           // Đăng ký dịch vụ lưu cache trong bộ nhớ (Session sẽ sử dụng nó)
+builder.Services.AddSession(cfg => {                    // Đăng ký dịch vụ Session
+    cfg.Cookie.Name = "cart";             // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
+    cfg.IdleTimeout = new TimeSpan(0,30, 0);           // Thời gian tồn tại của Session
+});
+
 //build
 var app = builder.Build();
 
@@ -95,15 +104,35 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
+// contents/1.jpg => Uploads/1.jpg
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions(){
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "Uploads")
+        ),
+    RequestPath = "/contents"
+});
 
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapRazorPages(); // Thêm ánh xạ điểm cuối cho Razor Pages
+// Map route cho Areas trước
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+);
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+// Map route mặc định sau
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
 app.Run();

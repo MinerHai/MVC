@@ -105,6 +105,7 @@ namespace App.Areas.Identity.Controllers
         {
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User đăng xuất");
+            Response.Cookies.Delete("cart");
             return RedirectToAction("Index", "Home", new {area = ""});
         }
         //

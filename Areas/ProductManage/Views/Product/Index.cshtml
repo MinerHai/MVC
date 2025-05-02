@@ -1,0 +1,89 @@
+@model IEnumerable<App.Models.Product.ProductModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<partial name="_StatusMessage" />
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1>Danh sách sản phẩm</h1>
+    </div>
+</div>
+
+<div class="app-content">
+    <div class="container-fluid">
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Author)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Discount)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Quantity)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="@($"/contents/Products/{(item.Photos.FirstOrDefault()?.FileName ?? "no-img.png")}")"
+                                alt="product" style="max-width: 100px; max-height: 100px; object-fit: cover;">
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ProductId">@Html.DisplayFor(modelItem =>
+                                                            item.Title)</a>
+                        <br>
+                        @string.Join(", ", item.ProductCategoryProducts.Select(pc => pc.CategoryProducts.Title))
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Author.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @if (item.Discount > 0)
+                            {
+                                <span class="badge bg-success">@item.Discount.ToString("0.00")%</span>
+                            }
+                            else
+                            {
+                                <span class="text-muted">___</span>
+                            }
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Quantity)
+                        </td>
+
+                        <td>
+
+                            <a asp-action="Edit" asp-route-id="@item.ProductId"
+                                class="btn btn-info text-white ">Edit</a> |
+                            <a asp-action="Delete" asp-route-id="@item.ProductId"
+                                class="btn btn-danger text-white ">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <partial name="_PagingXTL" model="@ViewBag.pagingModel" />
+    </div>
+</div>

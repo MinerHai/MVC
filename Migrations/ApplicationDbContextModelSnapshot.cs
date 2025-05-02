@@ -27,12 +27,23 @@ namespace MVC.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("AvatarImg")
+                        .HasColumnType("longtext");
+
                     b.Property<DateTime?>("BirthDate")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("City")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("longtext");
+
+                    b.Property<string>("Country")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -41,7 +52,15 @@ namespace MVC.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<string>("FirstName")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
+
                     b.Property<string>("HomeAdress")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
+
+                    b.Property<string>("LastName")
                         .HasMaxLength(400)
                         .HasColumnType("nvarchar");
 
@@ -71,12 +90,19 @@ namespace MVC.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("longtext");
 
+                    b.Property<string>("StreetAdress")
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("varchar(256)");
+
+                    b.Property<decimal?>("ZipCode")
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("Id");
 
@@ -97,7 +123,6 @@ namespace MVC.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Content")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int?>("ParentCategoryId")
@@ -117,12 +142,325 @@ namespace MVC.Migrations
 
                     b.HasIndex("ParentCategoryId");
 
-                    b.HasIndex("Slug");
+                    b.HasIndex("Slug")
+                        .IsUnique();
 
                     b.ToTable("Category");
                 });
 
-            modelBuilder.Entity("MVC.Models.Contact", b =>
+            modelBuilder.Entity("App.Models.Orders.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ProducttProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProducttProductId");
+
+                    b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("App.Models.Orders.OrderModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FirstName")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("LastName")
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("StreetAddress")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("ZipCode")
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("App.Models.Post", b =>
+                {
+                    b.Property<int>("PostId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("AuthorId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DateUpdated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("FileName")
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("Published")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Slug")
+                        .HasMaxLength(160)
+                        .HasColumnType("varchar(160)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(160)
+                        .HasColumnType("varchar(160)");
+
+                    b.HasKey("PostId");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("Post");
+                });
+
+            modelBuilder.Entity("App.Models.PostCategory", b =>
+                {
+                    b.Property<int>("PostID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
+
+                    b.HasKey("PostID", "CategoryID");
+
+                    b.HasIndex("CategoryID");
+
+                    b.ToTable("PostCategory");
+                });
+
+            modelBuilder.Entity("App.Models.PostComment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("AuthorId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("PostId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CommentId");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("PostId");
+
+                    b.ToTable("PostComment");
+                });
+
+            modelBuilder.Entity("App.Models.Product.CategoryProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Slug")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("CategoryProduct");
+                });
+
+            modelBuilder.Entity("App.Models.Product.ProductCategoryProduct", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductId", "CategoryId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("ProductCategoryProduct");
+                });
+
+            modelBuilder.Entity("App.Models.Product.ProductModel", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("AuthorId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Color")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("DateCreated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DateUpdated")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext");
+
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<bool>("Published")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Slug")
+                        .HasMaxLength(160)
+                        .HasColumnType("varchar(160)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(160)
+                        .HasColumnType("varchar(160)");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("longtext");
+
+                    b.Property<float>("Weight")
+                        .HasColumnType("float");
+
+                    b.HasKey("ProductId");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("App.Models.Product.ProductPhoto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("FileName")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductPhoto");
+                });
+
+            modelBuilder.Entity("MVC.Models.ContactModel", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -289,6 +627,119 @@ namespace MVC.Migrations
                     b.Navigation("ParentCategory");
                 });
 
+            modelBuilder.Entity("App.Models.Orders.OrderItem", b =>
+                {
+                    b.HasOne("App.Models.Orders.OrderModel", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("App.Models.Product.ProductModel", "Productt")
+                        .WithMany()
+                        .HasForeignKey("ProducttProductId");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Productt");
+                });
+
+            modelBuilder.Entity("App.Models.Orders.OrderModel", b =>
+                {
+                    b.HasOne("App.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("App.Models.Post", b =>
+                {
+                    b.HasOne("App.Models.AppUser", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId");
+
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("App.Models.PostCategory", b =>
+                {
+                    b.HasOne("App.Models.Category", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("App.Models.Post", "Post")
+                        .WithMany("PostCategories")
+                        .HasForeignKey("PostID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Post");
+                });
+
+            modelBuilder.Entity("App.Models.PostComment", b =>
+                {
+                    b.HasOne("App.Models.AppUser", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("App.Models.Post", "Post")
+                        .WithMany("Comments")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Post");
+                });
+
+            modelBuilder.Entity("App.Models.Product.ProductCategoryProduct", b =>
+                {
+                    b.HasOne("App.Models.Product.CategoryProduct", "CategoryProducts")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("App.Models.Product.ProductModel", "Product")
+                        .WithMany("ProductCategoryProducts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CategoryProducts");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("App.Models.Product.ProductModel", b =>
+                {
+                    b.HasOne("App.Models.AppUser", "Author")
+                        .WithMany()
+                        .HasForeignKey("AuthorId");
+
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("App.Models.Product.ProductPhoto", b =>
+                {
+                    b.HasOne("App.Models.Product.ProductModel", "Product")
+                        .WithMany("Photos")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -343,6 +794,25 @@ namespace MVC.Migrations
             modelBuilder.Entity("App.Models.Category", b =>
                 {
                     b.Navigation("CategoryChildren");
+                });
+
+            modelBuilder.Entity("App.Models.Orders.OrderModel", b =>
+                {
+                    b.Navigation("OrderItems");
+                });
+
+            modelBuilder.Entity("App.Models.Post", b =>
+                {
+                    b.Navigation("Comments");
+
+                    b.Navigation("PostCategories");
+                });
+
+            modelBuilder.Entity("App.Models.Product.ProductModel", b =>
+                {
+                    b.Navigation("Photos");
+
+                    b.Navigation("ProductCategoryProducts");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,201 @@
+@using App.Models.Product
+@using App.Models
+@using static App.Components.CategoryProductSideBar
+@{
+    List<CategoryProduct> categories = ViewBag.categories as List<CategoryProduct> ?? new List<CategoryProduct>();
+    CategoryProduct category = ViewBag.category as CategoryProduct ?? new CategoryProduct();
+    var categorySlug = ViewBag.categorySlug ?? "";
+}
+@model List<ProductModel>
+<section class="discount-banner">
+    <div class="discount-badge">
+        <span class="percentage">56%</span>
+        <span class="off-text">Off</span>
+    </div>
+    <div class="banner-content">
+        <div class="banner-text">
+            <p class="deal-type">Best Deals</p>
+            <h2 class="banner-title">Sale of the Month</h2>
+        </div>
+        <div class="timer">
+            <div class="time-unit">
+                <span class="time-value">00</span>
+                <span class="time-label">Days</span>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-unit">
+                <span class="time-value">02</span>
+                <span class="time-label">Hours</span>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-unit">
+                <span class="time-value">18</span>
+                <span class="time-label">Mins</span>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-unit">
+                <span class="time-value">46</span>
+                <span class="time-label">Secs</span>
+            </div>
+        </div>
+        <button class="shop-now-btn">Shop Now <i class="fas fa-arrow-right"></i></button>
+    </div>
+</section>
+
+<section class="filter-section">
+    <div class="filter-controls">
+        <div class="filter-dropdowns">
+            <div class="dropdown">
+                <select class="dropdown-toggle-product" id="categoryFilter" onchange="applyFilters()">
+                    <option value="">Select Category</i>
+                    </option>
+                    <option value="">All</option>
+                    @foreach (var c in categories)
+                    {
+                        <option value="@c.Slug">@c.Title</option>
+                    }
+                </select>
+            </div>
+            <div class="dropdown">
+                <select class="dropdown-toggle-product" id="priceFilter" onchange="applyFilters()">
+                    <option value="">Select price</i>
+                    </option>
+                    <option value="0-500">Under $500</option>
+                    <option value="500-1000">$500 - $1000</option>
+                    <option value="1000-999999">Above $1000</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="sort-show-controls">
+            <div class="dropdown">
+
+                <select class="dropdown-toggle-product" id="sortFilter" onchange="applyFilters()">
+                    <option value="lastest">Sort by: Lastest</i>
+                    </option>
+                    <option value="oldest">Sort by: Oldest</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-toggle-product">Show: 16 <i class="fas fa-chevron-down"></i></button>
+                <!-- Dropdown content here -->
+            </div>
+        </div>
+    </div>
+    <div class="active-filters">
+        <div class="active-filter-info">
+            <span>Active Filters:</span>
+            <span class="filter-tag">Wing Chair <i class="fas fa-times"></i></span>
+            <span class="filter-tag">Min $300 - Max 500 <i class="fas fa-times"></i></span>
+            <!-- Add hand icon if needed -->
+        </div>
+        <span class="results-count">@Model.Count</span>
+    </div>
+</section>
+
+<div id="producList">
+    <!-- Danh sách sản phẩm -->
+    <div id="productList">
+        @Html.Partial("_ProductGridPartial", @Model)
+    </div>
+
+</div>
+
+<div class="modal fade" id="productInfoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-content" id="productInfoContent">
+            <!-- Nội dung sẽ load ở đây -->
+        </div>
+    </div>
+</div>
+
+@* @section SideBar {
+    @await Component.InvokeAsync("CategoryProductSideBar", new CategoryProductSideBarData(){
+    Categories = categories,
+categorySlug = categorySlug
+})
+} *@
+
+
+@section Scripts {
+    <script>
+        $(document).on('click', '.view-info', function () {
+            var id = $(this).data('id');
+            var url = '/productinfo/' + id;
+
+            $.get(url, { id: id })
+                .done(function (res) {
+                    $('#productInfoContent').html(res);
+                    $('#productInfoModal').modal('show');
+
+                })
+                .fail(function (xhr) {
+                    alert("Không thể tải dữ liệu: " + xhr.status);
+                });
+        });
+
+        $('#productInfoModal').on('shown.bs.modal', function () {
+            console.log("shown.bs.modal event fired");
+            const quantityValue = document.getElementById('quantity-value');
+            const quantityMinus = document.getElementById('quantity-minus');
+            const quantityPlus = document.getElementById('quantity-plus');
+
+            let currentQuantity = parseInt(quantityValue.innerText);
+
+            quantityMinus.addEventListener('click', function () {
+                console.log("quantityMinus clicked");
+                if (currentQuantity > 0) {
+                    currentQuantity--;
+                    quantityValue.innerText = currentQuantity;
+                }
+            });
+
+            quantityPlus.addEventListener('click', function () {
+                console.log("quantityPlus clicked");
+                currentQuantity++;
+                quantityValue.innerText = currentQuantity;
+            });
+        });
+    </script>
+
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.nextElementSibling;
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // Click ngoài thì ẩn dropdown
+        window.addEventListener('click', function (e) {
+            document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
+                if (!dropdown.previousElementSibling.contains(e.target)) {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <script>
+        function applyFilters() {
+            const category = document.getElementById("categoryFilter").value;
+            const price = document.getElementById("priceFilter").value;
+            const sort = document.getElementById("sortFilter").value;
+            // Gọi API để lấy danh sách sản phẩm theo bộ lọc
+
+            fetch(`/productFilter?categoryslug=${category}&price=${price}&sort=${sort}`)
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById('productList').innerHTML = html;
+                });
+        }
+
+        document.getElementById("categoryFilter").addEventListener("change", applyFilters);
+        document.getElementById("priceFilter").addEventListener("change", applyFilters);
+    </script>
+    
+}
+
+
+<partial name="_PagingXTL" model="@ViewBag.pagingModel"></partial>

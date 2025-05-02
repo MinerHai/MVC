@@ -5,16 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MVC</title>
-    <link rel="stylesheet" href="~/css/layout.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/product.css" asp-append-version="true" />
     <!-- Import font Poppins từ Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KEY.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -50,7 +50,7 @@
                                 <img src="~/img/search-icon.png" alt="icon" class="me-1" height="16px">
                             </span>
                             <!-- Input -->
-                            <input type="text" class="form-control form-control-radius" placeholder="Search">
+                            <input type="text" class="form-control " placeholder="Search">
                             <!-- Button bên phải -->
                             <button class="btn btn-primary green-bg-color  "
                                 style="font-weight:500; border:none;">Search</button>
@@ -70,7 +70,11 @@
         </div>
 
         <partial name="_Navigation" />
+        @await Component.InvokeAsync("Breadcrumb")
+        </div>
     </header>
+
+
     <div class="container d-flex flex-column min-vh-90">
         <main role="main" class="content flex-grow-1">
             @RenderBody()
@@ -126,8 +130,8 @@
                             asp-action="Index">My Account</a>
                         <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
                             asp-action="Index">Order History</a>
-                        <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
-                            asp-action="Index">Shoping Cart</a>
+                        <a class="gray-smal-text nav-link ps-0" asp-area="ProductManage" asp-controller="ViewProduct"
+                            asp-action="Cart">Shoping Cart</a>
                         <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
                             asp-action="Index">Wishlist</a>
                         <a class="gray-smal-text nav-link ps-0" asp-area="Identity" asp-controller="Manage"
@@ -198,7 +202,18 @@
         </div>
     </footer>
 
+
     @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/toast.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.toast').fadeIn(200, function () {
+                $(this).delay(2600).fadeOut(200, function () {
+                    $(this).remove();
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+@using App.Models
+@model App.Models.Blog.UploadOneFile;
+
+@{
+    Post? post = ViewData["post"] as Post;
+}
+<h1> Upload Photo: @post.Title </h1>
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadPhoto">
+    <label asp-for="@Model.FileUpLoad"></label>
+    <input asp-for="@Model.FileUpLoad">
+    <span asp-validation-for="@Model.FileUpLoad"></span>
+    <button class="btn btn-primary" type="submit" asp-action="UploadPhoto"
+        asp-route-id="@post.PostId">Upload</button>
+</form>

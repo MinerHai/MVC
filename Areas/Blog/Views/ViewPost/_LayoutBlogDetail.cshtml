@@ -1,0 +1,14 @@
+@{
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/blog.css" />
+<div class="row">
+    <div class="col-md-9">
+        @RenderBody()
+    </div>
+    <div class="col-md-3">
+        @RenderSection("SideBar", false)
+    </div>
+
+
+</div>

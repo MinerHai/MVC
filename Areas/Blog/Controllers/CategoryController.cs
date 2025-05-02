@@ -17,6 +17,8 @@ namespace MVC.Areas_Blogs_Controllers
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;
+         [TempData]
+        public string StatusMessage { get; set; }
 
         public CategoryController(AppDbContext context)
         {
@@ -70,6 +72,7 @@ namespace MVC.Areas_Blogs_Controllers
             {
                 _context.Add(category);
                 await _context.SaveChangesAsync();
+                
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ParentCategoryId"] = new SelectList(_context.Categories, "Id", "Slug", category.ParentCategoryId);

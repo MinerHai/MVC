@@ -334,5 +334,6 @@ namespace App.Areas.Identity.Controllers
             where c.UserId == model.user.Id select c).ToListAsync();
 
         }
+        
   }
 }

@@ -1,0 +1,710 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    line-height: 1.5;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 424px; /* Fixed width from Figma */
+    flex-shrink: 0;
+}
+
+.filter-section {
+    margin-bottom: 28px; /* Spacing from Figma layout */
+}
+
+.filter-section h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px; /* Spacing below heading */
+    color: #1A1A1A;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #E6E6E6;
+    margin-bottom: 28px; /* Spacing around dividers */
+}
+
+/* Search Section */
+.search-section .search-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+.search-section input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #999999; /* Placeholder text color */
+    margin-left: 8px;
+    flex-grow: 1;
+}
+
+.search-section input[type="text"]::placeholder {
+    color: #999999;
+}
+
+.search-section img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+}
+
+/* Categories Section */
+.categories-section ul {
+    list-style: none;
+}
+
+.categories-section li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #1A1A1A;
+    margin-bottom: 16px; /* Spacing between list items */
+    cursor: pointer;
+}
+
+.categories-section li span {
+    color: #808080; /* Count color */
+    
+}
+
+/* Recently Added Section */
+.recent-posts-section .recent-post {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px; /* Spacing between recent posts */
+    align-items: center;
+}
+
+.recent-posts-section .recent-post img {
+    width: 100px; /* Image size from Figma */
+    height: 100px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.recent-posts-section .post-info p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 8px; /* Spacing from Figma */
+    line-height: 1.5;
+}
+
+.recent-posts-section .date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #666666; /* Date text color */
+}
+
+.recent-posts-section .date img {
+    width: 16px; /* Icon size */
+    height: 16px;
+}
+
+
+/* Main Blog Content Styles */
+.blog-content {
+    flex-grow: 1;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Space below header */
+}
+
+.blog-header p {
+    font-size: 16px;
+    color: #1A1A1A;
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #808080; /* 'Sort by:' text color */
+}
+
+.sort-by .dropdown {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.sort-by .dropdown span {
+    color: #4D4D4D; /* Dropdown text color */
+    margin-right: 8px; /* Space before arrow */
+}
+
+.sort-by .dropdown img {
+    width: 16px; /* Arrow size */
+    height: 16px;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 24px; /* Gap between cards */
+}
+
+/* Blog Card Styles */
+.blog-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-card.highlighted {
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.08); /* Shadow from Figma */
+    border-color: transparent; /* Remove border for highlighted */
+}
+
+.blog-card-image {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.blog-card-info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Gap between meta info and title */
+    flex-grow: 1; /* Allow info section to grow */
+}
+
+.meta-info {
+    display: flex;
+    gap: 16px; /* Gap between meta items */
+    margin-bottom: 8px; /* Space below meta info */
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #4D4D4D; /* Meta text color */
+}
+
+.meta-item img {
+    width: 16px; /* Icon size */
+    height: 16px;
+}
+
+.meta-item span {
+     color: #4D4D4D; /* Default meta text */
+}
+
+.meta-item:last-child span { /* Specific color for comments count */
+    color: #666666;
+}
+
+
+.blog-card-info h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A1A1A;
+    line-height: 1.5;
+    margin-bottom: 12px; /* Space below title */
+    flex-grow: 1; /* Push button to bottom */
+}
+
+.blog-card-info h5.highlighted-text {
+    color: #2C742F; /* Highlighted text color from Figma */
+}
+
+.read-more {
+    display: inline-flex; /* Use inline-flex for alignment */
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00B207; /* Button text color */
+    align-self: flex-start; /* Align button to the start */
+    margin-top: auto; /* Push to bottom */
+    padding: 5px 0; /* Add some padding for easier clicking */
+}
+
+.read-more img {
+    width: 16px; /* Arrow size */
+    height: 16px;
+}
+
+/* Responsive Adjustments (Optional Example) */
+@media (max-width: 1200px) {
+ 
+    .sidebar {
+        width: 100%;
+    }
+    .blog-grid {
+        /* Allow slightly smaller cards before stacking */
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 992px) { /* Add a mid-range breakpoint */
+    .blog-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+     .blog-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+    .blog-header {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+        gap: 20px; /* Adjust gap */
+    }
+    .blog-header p {
+        text-align: center; /* Center results text */
+    }
+}
+
+@media (max-width: 480px) { /* Breakpoint for very small screens */
+    .container {
+        padding: 0 15px; /* Reduce padding */
+        margin: 20px auto;
+    }
+    .blog-card-info {
+        padding: 16px; /* Reduce card padding */
+    }
+    .blog-card-info h5 {
+        font-size: 16px; /* Slightly smaller title */
+    }
+    .read-more {
+        font-size: 14px; /* Slightly smaller button text */
+    }
+    .filter-section h4 {
+        font-size: 18px; /* Slightly smaller sidebar headings */
+    }
+    .recent-posts-section .recent-post img {
+        width: 80px; /* Smaller recent post images */
+        height: 80px;
+    }
+    .recent-posts-section .post-info p {
+        font-size: 14px; /* Smaller recent post text */
+    }
+}
+
+/* DETAIL POST */
+
+.blog-detail {
+    margin-bottom: 40px; /* Spacing below the main blog content */
+}
+
+.blog-detail .main-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-height: 500px;
+}
+
+.blog-info {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4D4D4D; /* Food, By Admin color */
+}
+
+.info-item img {
+    width: 16px; /* Adjust icon size */
+    height: 16px;
+}
+
+.info-item .comment-count {
+    color: #666666; /* Comment count color */
+}
+
+.blog-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #1A1A1A;
+}
+
+.author-share-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0 24px;
+    border-top: 1px solid #E6E6E6; /* Separator line */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px; /* Add gap for wrapped items */
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author-image {
+    width: 50px; /* Adjust image size */
+    height: 50px;
+    border-radius: 50%;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.post-meta {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080; /* Meta text color */
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 4px;
+}
+
+.social-icon {
+    width: 32px; /* Adjust icon size */
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2; 
+    color: #00B207; 
+    transition: background-color 0.3s ease;
+}
+
+.social-icon img {
+    width: 16px;
+    height: 16px;
+    
+}
+
+
+.social-icon:hover {
+    background-color: #00B207; 
+    color:white;
+}
+
+
+.blog-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #808080; /* Màu chữ của content */
+    margin-bottom: 20px;
+}
+
+.blog-content .highlight {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1A1A1A; /* Highlighted paragraph color */
+    margin-bottom: 20px;
+}
+
+
+/* Comments Section */
+.comments-section {
+    margin-bottom: 40px;
+}
+
+.comments-list {
+    margin-bottom: 40px;
+}
+
+.comments-title,
+.leave-comment-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1A1A1A;
+    
+}
+
+.comment-item {
+    display: flex;
+    gap: 15px; /* Space between avatar and text */
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E6E6E6; /* Separator */
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.comment-avatar img {
+    width: 60px; /* Adjust avatar size */
+    height: 60px;
+    border-radius: 50%;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-meta {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 8px; /* Space below meta */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.comment-author {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.comment-date {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999; /* Date color */
+}
+
+.comment-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666666; /* Comment text color */
+}
+
+.load-more-comments {
+    display: block; /* Make it block to center */
+
+    margin: 20px auto 0; /* Center the button */
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #00B207;
+    background-color: #FFFFFF;
+    border: 2px solid #00B207;
+    border-radius: 43px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.load-more-comments:hover {
+    background-color: #00B207;
+    color: #FFFFFF;
+}
+
+/* Leave a Comment Form */
+.leave-comment-form .form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.leave-comment-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 6px;
+}
+
+.leave-comment-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #666666;
+    min-height: 120px; /* Adjust height */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.leave-comment-form textarea::placeholder {
+    color: #666666;
+    opacity: 0.7;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.remember-me input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.remember-me input[type="checkbox"]:checked {
+    background-color: #00B207; /* Checkbox checked color */
+    border-color: #00B207;
+}
+
+/* Basic checkmark style */
+.remember-me input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.remember-me label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 0; /* Override default label margin */
+    cursor: pointer;
+}
+
+.submit-comment-btn {
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #00B207;
+    border: none;
+    border-radius: 43px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-comment-btn:hover {
+    background-color: #008a05; /* Darker green on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 28px;
+    }
+
+    .author-share-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-images {
+        flex-direction: column;
+    }
+
+    .comment-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .comment-avatar {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-title {
+        font-size: 24px;
+    }
+
+    .info-item {
+        font-size: 12px;
+    }
+
+    .author-name {
+        font-size: 14px;
+    }
+
+    .post-meta {
+        font-size: 12px;
+    }
+
+    .blog-content p,
+    .blog-content .highlight {
+        font-size: 16px;
+    }
+
+    .comments-title,
+    .leave-comment-title {
+        font-size: 20px;
+    }
+
+    .comment-author,
+    .comment-date,
+    .comment-text {
+        font-size: 12px;
+    }
+
+    .leave-comment-form textarea {
+        font-size: 14px;
+    }
+
+    .remember-me label {
+        font-size: 12px;
+    }
+
+    .submit-comment-btn,
+    .load-more-comments {
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+}

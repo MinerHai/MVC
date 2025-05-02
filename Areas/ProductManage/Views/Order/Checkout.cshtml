@@ -1,0 +1,87 @@
+@model App.Models.Orders.OrderModel
+@inject CartServices cartService
+@{
+    Layout = "_Layout";
+    var cartItems = cartService.GetCartItems();
+    decimal total = 0;
+}
+
+<h2>Thông tin đơn hàng</h2>
+
+<form asp-action="Checkout" method="post">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Thông tin người nhận</h4>
+            <div class="form-group">
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="StreetAddress"></label>
+                <input asp-for="StreetAddress" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="City"></label>
+                <input asp-for="City" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Country"></label>
+                <input asp-for="Country" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Phương thức thanh toán</label><br />
+                <select asp-for="PaymentMethod" class="form-control">
+                    <option value="COD">Thanh toán khi nhận hàng</option>
+                    <option value="Online">Chuyển khoản (MoMo, v.v.)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Xác nhận đặt hàng</button>
+        </div>
+
+        <div class="col-md-6">
+            <h4>Sản phẩm trong đơn hàng</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in cartItems)
+                {
+                    var thanhtien = item.quantity * item.product.Price;
+                    total += thanhtien;
+                    <tr>
+                        <td>@item.product.Title</td>
+                        <td>@item.product.Price.ToString("n0")</td>
+                        <td>@item.quantity</td>
+                        <td>@thanhtien.ToString("n0")</td>
+                    </tr>
+                }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right"><strong>Tổng cộng:</strong></td>
+                        <td><strong>@total.ToString("n0")</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</form>

@@ -2,13 +2,14 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System.Collections.Generic;
+using App.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace App.Areas.Identity.Models.ManageViewModels
 {
-    public class IndexViewModel
+    public class IndexViewModel 
     {
-        public EditExtraProfileModel profile { get; set; }
         public bool HasPassword { get; set; }
 
         public IList<UserLoginInfo> Logins { get; set; }
@@ -20,5 +21,6 @@ namespace App.Areas.Identity.Models.ManageViewModels
         public bool BrowserRemembered { get; set; }
 
         public string AuthenticatorKey { get; set; }
+
     }
 }

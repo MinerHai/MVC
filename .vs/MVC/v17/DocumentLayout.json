@@ -3,40 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\areas\\contact\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:areas\\contact\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\areas\\blog\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:areas\\blog\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\areas\\blog\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:areas\\blog\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\views\\shared\\_menumanagedb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:views\\shared\\_menumanagedb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|c:\\users\\dell\\onedrive\\desktop\\web\\mvc\\areas\\blog\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC072F4-C76B-6B7E-C2E7-7D69BB09ACD2}|MVC.csproj|solutionrelative:areas\\blog\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,114 +31,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ContactsController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Contact\\Controllers\\ContactsController.cs",
-              "RelativeDocumentMoniker": "Areas\\Contact\\Controllers\\ContactsController.cs",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Contact\\Controllers\\ContactsController.cs",
-              "RelativeToolTip": "Areas\\Contact\\Controllers\\ContactsController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDkAAAAEAAAAAAAAAA==",
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Blog\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Areas\\Blog\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Blog\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Areas\\Blog\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T09:16:19.343Z",
+              "WhenOpened": "2025-04-02T14:32:32.416Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Models\\Contact.cs",
-              "RelativeDocumentMoniker": "Models\\Contact.cs",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Models\\Contact.cs",
-              "RelativeToolTip": "Models\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T08:57:03.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Blog\\Views\\Category\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Blog\\Views\\Category\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Blog\\Views\\Category\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Blog\\Views\\Category\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:19:58.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Blog\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Areas\\Blog\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Areas\\Blog\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Areas\\Blog\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvw8AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T04:14:22.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAuwBYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-18T03:50:53.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "Models\\AppDbContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T03:32:52.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_MenuManageDb.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Views\\Shared\\_MenuManageDb.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_MenuManageDb.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Views\\Shared\\_MenuManageDb.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_MenuManageDb.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBIAAABgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-18T04:16:19.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T03:33:03.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MVC.csproj",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\MVC.csproj",
-              "RelativeDocumentMoniker": "MVC.csproj",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\MVC.csproj",
-              "RelativeToolTip": "MVC.csproj",
-              "ViewState": "AQIAABAAAAAAAAAAAAAqwCgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-18T01:26:36.067Z"
             }
           ]
         }

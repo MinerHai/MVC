@@ -1,0 +1,21 @@
+@model App.Models.Post
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1 class=""> Chắc chắn xóa bài viết: @Model.Title </h1>
+    </div>
+</div>
+
+<div class="app-content">
+    <div class="container-fluid">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="PostId" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index" class="btn btn-info text-white">Quay lại</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+@using Microsoft.IdentityModel.Tokens
+@model IEnumerable<App.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<partial name="_StatusMessage" />
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1>Danh sách bài đăng</h1>
+    </div>
+</div>
+<hr>
+<div class="app-content">
+    <!--begin::Container-->
+    <div class="container-fluid">
+        <p>
+        <a asp-action="Create" class="btn btn-primary">Thêm bài đăng</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Published)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Author)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DateUpdated)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (item.FileName.IsNullOrEmpty())
+                            {
+                                <img src="~/img/no-img.png" alt="Blog Image" style="max-width: 100px; max-height: 100px; object-fit: cover;">
+                            }
+                            else
+                            {
+                                <img src="/contents/Posts/@item.FileName" alt="Blog Image" style="max-width: 100px; max-height: 100px; object-fit: cover;">
+                            }
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.PostId">@Html.DisplayFor(modelItem => item.Title)</a>
+                            <br>
+                            @string.Join(", ", item.PostCategories.Select(pc => pc.Category.Title))
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Published)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Author.UserName)
+                        </td>
+                            <td>
+                            @Html.DisplayFor(modelItem => item.DateUpdated)
+                        </td>
+                        <td>
+
+                            <a asp-action="Edit" asp-route-id="@item.PostId"  class="btn btn-info text-white">Edit</a> |
+                            <a asp-action="Delete" asp-route-id="@item.PostId"  class="btn btn-danger text-white ">Delete</a>
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<partial name="_PagingXTL" model="@ViewBag.pagingModel" />

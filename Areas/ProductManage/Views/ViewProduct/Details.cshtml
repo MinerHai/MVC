@@ -1,0 +1,240 @@
+@using App.Models.Product
+@model App.Models.Product.ProductModel
+
+@{
+    ViewData["Title"] = "Details";
+    var relatedProducts = ViewData["relateProducts"] as List<ProductModel>;
+}
+<partial name="_ProductInfoPartial" model="Model" />
+
+<div class="content">
+    <div class="product-nav mt-3">
+        <button id="button1" class="form-button active-button"
+            onclick="showForm('desc', 'button1','form-container')">Descriptions
+            <hr class="cus">
+        </button>
+        <button id="button2" class="form-button" onclick="showForm('additional', 'button2','form-container')">Additional
+            Information
+            <hr class="cus">
+        </button>
+        <button id="button3" class="form-button" onclick="showForm('feedback', 'button3','form-container')">Customer
+            Feedback
+            <hr class="cus">
+        </button>
+    </div>
+</div>
+<!-- Nội dung của Form 1 -->
+<div id="desc" class="form-container" style="display: block;">
+    <div style="display: flex;">
+        <div class="left-content">
+            <p>@Html.Raw(Model.Content)</p>
+        </div>
+
+        <div class="right-content">
+            <div class="the-icon">
+                <img src="~/img/Video.png" alt="">
+            </div>
+            <div class="r-content-feature">
+                <div class="per-feature">
+                    <div class="the-icon"><img src="~/img/discount-icon.png" alt=""></div>
+                    <div class="f-content">
+                        <p id="black-text">64% Discount</p>
+                        <p>Save your 64% money with</p>
+                    </div>
+                </div>
+
+                <div class="per-feature">
+                    <div class="the-icon"><img src="~/img/leaf-1.png" alt=""></div>
+                    <div class="f-content">
+                        <p id="black-text">100% Organic</p>
+                        <p>100% Organic Vegetables</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Nội dung của Form 2 -->
+<div id="additional" class="form-container">
+    <div style="display: flex;">
+        <div class="left-content">
+            <div class="desc-bar">
+                <p id="black-text">Weight:</p>
+                <p id="white-text">@Model.Weight</p>
+            </div>
+
+            <div class="desc-bar">
+                <p id="black-text">Color:</p>
+                <p id="white-text">@Model.Color</p>
+            </div>
+
+            <div class="desc-bar">
+                <p id="black-text">Type:</p>
+                <p id="white-text">@Model.Type</p>
+            </div>
+
+            <div class="desc-bar">
+                <p id="black-text">Category:</p>
+                <p id="white-text">@string.Join(", ", @Model.ProductCategoryProducts.Select(c =>
+                                        c.CategoryProducts.Title))</p>
+            </div>
+
+            <div class="desc-bar">
+                <p id="black-text">Stock Status:</p>
+                <p id="white-text">Available (@Model.Quantity)</p>
+            </div>
+
+            <div class="desc-bar">
+                <p id="black-text">Tags:</p>
+                <p id="white-text">Healthy, Clean, Food, Vegateables</p>
+            </div>
+
+        </div>
+
+        <div class="right-content">
+            <div class="the-icon">
+                <img src="~/img/Video.png" alt="">
+            </div>
+            <div class="r-content-feature">
+                <div class="per-feature">
+                    <div class="the-icon"><img src="~/img/discount-icon.png" alt=""></div>
+                    <div class="f-content">
+                        <p id="black-text">64% Discount</p>
+                        <p>Save your 64% money with</p>
+                    </div>
+                </div>
+
+                <div class="per-feature">
+                    <div class="the-icon"><img src="~/img/leaf-1.png" alt=""></div>
+                    <div class="f-content">
+                        <p id="black-text">100% Organic</p>
+                        <p>100% Organic Vegetables</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="text-center">
+    <h1>Related Products</h1>
+</div>
+<partial name="_ProductGridPartial" model="relatedProducts" />
+<div class="modal fade" id="productInfoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-content" id="productInfoContent">
+            <!-- Nội dung sẽ load ở đây -->
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        function showForm(formId, buttonId, className) {
+            var selectedForm = document.getElementById(formId);
+            if (selectedForm.style.display === 'block') {
+                return;
+            }
+            var forms = document.querySelectorAll('.' + className);
+            forms.forEach(function (form) {
+                form.style.display = 'none';
+            });
+            selectedForm.style.display = 'block';
+
+            var buttons = document.querySelectorAll('.form-button');
+            buttons.forEach(function (button) {
+                if (button.id === buttonId) {
+                    button.classList.add('active-button');
+                } else {
+                    button.classList.remove('active-button');
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function toggleDropdown(button) {
+            const dropdown = button.nextElementSibling;
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // Click ngoài thì ẩn dropdown
+        window.addEventListener('click', function (e) {
+            document.querySelectorAll('.dropdown-content').forEach(function (dropdown) {
+                if (!dropdown.previousElementSibling.contains(e.target)) {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
+        console.log("shown.bs.modal event fired");
+        const quantityValue = document.getElementById('quantity-value');
+        const quantityMinus = document.getElementById('quantity-minus');
+        const quantityPlus = document.getElementById('quantity-plus');
+
+        let currentQuantity = parseInt(quantityValue.innerText);
+
+        quantityMinus.addEventListener('click', function () {
+            console.log("quantityMinus clicked");
+            if (currentQuantity > 0) {
+                currentQuantity--;
+                quantityValue.innerText = currentQuantity;
+            }
+        });
+
+        quantityPlus.addEventListener('click', function () {
+            console.log("quantityPlus clicked");
+            currentQuantity++;
+            quantityValue.innerText = currentQuantity;
+        });
+    </script>
+    <script>
+        $(document).on('click', '.view-info', function () {
+            var id = $(this).data('id');
+            var url = '/productinfo/' + id;
+
+            $.get(url, { id: id })
+                .done(function (res) {
+                    $('#productInfoContent').html(res);
+                    $('#productInfoModal').modal('show');
+
+                })
+                .fail(function (xhr) {
+                    alert("Không thể tải dữ liệu: " + xhr.status); ;
+                });
+        });
+
+        $('#productInfoModal').on('shown.bs.modal', function () {
+            console.log("shown.bs.modal event fired");
+            const quantityValue = document.getElementById('quantity-value');
+            const quantityMinus = document.getElementById('quantity-minus');
+            const quantityPlus = document.getElementById('quantity-plus');
+
+            let currentQuantity = parseInt(quantityValue.innerText);
+
+            quantityMinus.addEventListener('click', function () {
+                console.log("quantityMinus clicked");
+                if (currentQuantity > 0) {
+                    currentQuantity--;
+                    quantityValue.innerText = currentQuantity;
+                }
+            });
+
+            quantityPlus.addEventListener('click', function () {
+                console.log("quantityPlus clicked");
+                currentQuantity++;
+                quantityValue.innerText = currentQuantity;
+            });
+        });
+    </script>
+}

@@ -1,0 +1,168 @@
+@model App.Models.Product.ProductModel
+
+@{
+    var photoFileName = @Model?.Photos?.FirstOrDefault()?.FileName ?? "no-img.png";
+    var imagePath = $"/contents/Products/{(Model?.Photos?.FirstOrDefault()?.FileName ?? "no-img.png")}";
+}
+<link rel="stylesheet" href="~/css/product-detail.css">
+
+<div class="product-detail-content">
+    <div class="product-images">
+        <div class="main-image" id="mainImage" style='background-image: url(@imagePath);'>
+        </div>
+
+        <div class="thumbnail-slider">
+            <button class="slider-arrow up">
+                <img src="~/img/arrow-down.svg" alt="Previous">
+            </button>
+
+            <div class="thumbnails">
+                @if (Model.Photos.Count == 0)
+                {
+                    <img src="~/img/no-img.png" data-imgurl="@imagePath" alt="Thumbnail" class="thumbnail"
+                        onclick="changeMainImage(this)">
+                }
+                else if (Model.Photos.Count == 1)
+                {
+                    var imgUrl = $"/contents/Products/{Model.Photos.FirstOrDefault().FileName}";
+                    <img src="@imgUrl" data-imgurl="@imgUrl" alt="Thumbnail" class="thumbnail"
+                        onclick="changeMainImage(this)">
+                }
+                else
+                {
+                    @foreach (var photo in Model.Photos)
+                    {
+                        var imgUrl = $"/contents/Products/{photo.FileName}";
+                        <img src="@imgUrl" data-imgurl="@imgUrl" alt="Thumbnail" class="thumbnail"
+                            onclick="changeMainImage(this)">
+                    }
+                }
+            </div>
+
+            <button class="slider-arrow down">
+                <img src="~/img/arrow-down.svg" alt="Next">
+            </button>
+        </div>
+    </div>
+    <div class="product-info-details">
+        <div class="product-header">
+            <h1 class="product-name-details">@Model.Title</h1>
+            <span
+                class="badge @(Model.Quantity > 0 ? "badge-stock stock-status" : "badge-out-of-stock stock-status-out-of-stock")">
+                @(Model.Quantity > 0 ? "In Stock" : "Out of Stock")
+            </span>
+
+        </div>
+        <div class="product-meta">
+            <div class="rating">
+                <img src="~/img/star.svg" alt="Star">
+                <img src="~/img/star.svg" alt="Star">
+                <img src="~/img/star.svg" alt="Star">
+                <img src="~/img/star.svg" alt="Star">
+                <img src="~/img/star.svg" alt="Star">
+                <span class="review-count">4 Review</span>
+            </div>
+            <span class="separator">•</span>
+            <div class="sku">
+                <span class="sku-label">SKU:</span>
+                <span class="sku-value">@Model.Quantity</span>
+            </div>
+        </div>
+        <div class="product-price-details">
+            @if (@Model.Discount > 0)
+            {
+                <span class="discounted-price-details">Price: </span>
+                <span class="original-price-details">$@Model.Price.ToString("0.00")</span>
+                <span class="discounted-price-details">$@((Model.Price - (Model.Price * Model.Discount / 100)).ToString("0.00"))</span>
+                <span class="badge badge-discount discount-badge-details">@((@Model.Discount).ToString("0.00"))%</span>
+            }
+            else
+            {
+                <span class="discounted-price-details">Price: $@((@Model.Price).ToString("0.00"))</span>
+            }
+
+        </div>
+        <hr class="divider">
+        <p class="product-description">
+            @Model.Description
+        </p>
+        <div class="product-actions-details">
+            <div class="quantity-selector">
+                <button class="quantity-btn minus" id="quantity-minus">
+                    <img src="~/img/minus.svg" alt="Decrease quantity">
+                </button>
+                <span class="quantity-value" id="quantity-value">0</span>
+                <button class="quantity-btn plus" id="quantity-plus">
+                    <img src="~/img/plus.svg" alt="Increase quantity">
+                </button>
+            </div>
+            @if (Model.Quantity > 0)
+            {
+                <a class="add-to-cart-btn-details text-decoration-none" id="add-to-cart-link" asp-action="AddToCart"
+                    asp-controller="ViewProduct" asp-route-productid="@Model.ProductId">
+                    Add to Cart
+                    <img src="~/img/cart-icon.svg" alt="">
+                </a>
+            }
+            else
+            {
+                <button class="add-to-cart-btn-details " disabled>
+                    Out of Stock
+                    <img src="~/img/cart-icon.svg" alt="">
+                </button>
+            }
+
+            <button class="wishlist-btn">
+                <img src="~/img/heart.svg" alt="Add to wishlist">
+            </button>
+        </div>
+        <div class="product-category">
+            <span class="category-label">Category:</span>
+            <span class="category-value">@string.Join(", ", Model.ProductCategoryProducts.Select(c =>
+                                c.CategoryProducts.Title))</span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function changeMainImage(imgElement) {
+        const mainImageDiv = document.getElementById("mainImage");
+        const newImageUrl = imgElement.getAttribute('data-imgurl') || imgElement.src;
+        console.log("Runninnggg");
+        if (mainImageDiv && newImageUrl) {
+            mainImageDiv.style.backgroundImage = `url('${newImageUrl}')`;
+            mainImageDiv.style.backgroundSize = 'cover';
+            mainImageDiv.style.backgroundPosition = 'center';
+        }
+    }
+
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '#add-to-cart-link', function (e) {
+            e.preventDefault();
+            const quantity = parseInt($('#quantity-value').text()) || 1;
+            const productId = '@Model.ProductId';
+            const url = `/addcart/${productId}?quantity=${quantity}`;
+
+            $.get(url)
+                .done(function (response) {
+                    // Gọi action ShowToast để lấy HTML của partial view
+                    $.get('/ProductManage/ViewProduct/ShowToast', { message: response.message })
+                        .done(function (toastHtml) {
+                            // Chèn toast HTML vào DOM (ví dụ: vào body hoặc một container cụ thể)
+                            $('body').append(toastHtml);
+                        })
+                        .fail(function () {
+                            alert("Lỗi khi hiển thị thông báo");
+                        });
+                })
+                .fail(function () {
+                    alert("Lỗi khi thêm vào giỏ hàng");
+                });
+        });
+    });
+</script>

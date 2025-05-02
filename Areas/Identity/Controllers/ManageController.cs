@@ -6,35 +6,41 @@ using System.Threading.Tasks;
 using App.Areas.Identity.Models.ManageViewModels;
 using App.ExtendMethods;
 using App.Models;
+using App.Models.Blog;
 using App.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Shared;
 
 namespace App.Areas.Identity.Controllers
 {
 
     [Authorize]
     [Area("Identity")]
-    [Route("/Member/[action]")]
     public class ManageController : Controller
     {
+        private readonly AppDbContext _context;
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger<ManageController> _logger;
+        [TempData]
+        public string StatusMessage { get; set; }
 
         public ManageController(
         UserManager<AppUser> userManager,
         SignInManager<AppUser> signInManager,
         IEmailSender emailSender,
-        ILogger<ManageController> logger)
+        ILogger<ManageController> logger,
+        AppDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
             _logger = logger;
+            _context = context;
         }
 
         //
@@ -52,9 +58,32 @@ namespace App.Areas.Identity.Controllers
                 : message == ManageMessageId.RemovePhoneSuccess ? "Đã bỏ số điện thoại."
                 : "";
 
-            var user = await GetCurrentUserAsync();
-#pragma warning disable CS8601 // Possible null reference assignment.
 
+            var user = await GetCurrentUserAsync();
+            ViewData["User"] = user;
+
+            var editProfileModel = new AccountProfileModel
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                PhoneNumber = user.PhoneNumber,
+                Gmail = user.Email
+            };
+            ViewData["EditProfileModel"] = editProfileModel;
+
+            var billingAddressModel = new BillingAdressModel
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                PhoneNumber = user.PhoneNumber,
+                Gmail = user.Email,
+                ZipCode = user.ZipCode,
+                City = user.City,
+                Country = user.Country,
+                StreetAdress = user.StreetAdress
+
+            };
+            ViewData["BillingAddressModel"] = billingAddressModel;
             var model = new IndexViewModel
             {
                 HasPassword = await _userManager.HasPasswordAsync(user),
@@ -63,16 +92,9 @@ namespace App.Areas.Identity.Controllers
                 Logins = await _userManager.GetLoginsAsync(user),
                 BrowserRemembered = await _signInManager.IsTwoFactorClientRememberedAsync(user),
                 AuthenticatorKey = await _userManager.GetAuthenticatorKeyAsync(user),
-                profile = new EditExtraProfileModel()
-                {
-                    BirthDate = user.BirthDate,
-                    HomeAdress = user.HomeAdress,
-                    UserName = user.UserName,
-                    UserEmail = user.Email,
-                    PhoneNumber = user.PhoneNumber,
-                }
+
             };
-#pragma warning restore CS8601 // Possible null reference assignment.
+
 
             return View(model);
         }
@@ -89,11 +111,7 @@ namespace App.Areas.Identity.Controllers
         }
         private Task<AppUser> GetCurrentUserAsync()
         {
-#pragma warning disable CS8619 // Nullability of reference types in value doesn't match target type.
-
             return _userManager.GetUserAsync(HttpContext.User);
-#pragma warning restore CS8619 // Nullability of reference types in value doesn't match target type.
-
         }
 
         //
@@ -374,48 +392,132 @@ namespace App.Areas.Identity.Controllers
             {
                 var codes = await _userManager.GenerateNewTwoFactorRecoveryCodesAsync(user, 5);
                 _logger.LogInformation(1, "User generated new recovery code.");
-#pragma warning disable CS8601 // Possible null reference assignment.
-
                 return View("DisplayRecoveryCodes", new DisplayRecoveryCodesViewModel { Codes = codes });
-#pragma warning restore CS8601 // Possible null reference assignment.
-
             }
             return View("Error");
         }
-
-        [HttpGet]
-        public async Task<IActionResult> EditProfileAsync()
+        [Route("Identity/Manage/EditProfileAsync")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditProfileAsync(AccountProfileModel model)
         {
             var user = await GetCurrentUserAsync();
-
-#pragma warning disable CS8601 // Possible null reference assignment.
-
-            var model = new EditExtraProfileModel()
+            if (user == null)
             {
-                BirthDate = user.BirthDate,
-                HomeAdress = user.HomeAdress,
-                UserName = user.UserName,
-                UserEmail = user.Email,
-                PhoneNumber = user.PhoneNumber,
-            };
-#pragma warning restore CS8601 // Possible null reference assignment.
+                return NotFound("Không tìm thấy người dùng.");
+            }
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Index), "Manage");
+            }
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
+            user.PhoneNumber = model.PhoneNumber;
 
-            return View(model);
+
+            var result = await _userManager.UpdateAsync(user);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    _logger.LogError($"Error updating profile for user {user.Id}: {error.Description}");
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+
+                TempData["StatusMessage"] = "Lỗi: Cập nhật hồ sơ thất bại.";
+
+                return RedirectToAction(nameof(Index), "Manage");
+            }
+            else
+            {
+                TempData["StatusMessage"] = "Đã cập nhật thông tin cá nhân thành công.";
+                return RedirectToAction(nameof(Index), "Manage");
+            }
         }
         [HttpPost]
-        public async Task<IActionResult> EditProfileAsync(EditExtraProfileModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditBillingAdress(BillingAdressModel model)
         {
             var user = await GetCurrentUserAsync();
+            if (user == null)
+            {
+                return NotFound("Không tìm thấy người dùng.");
+            }
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Index), "Manage");
+            }
+            user.FirstName = model.FirstName;
+            user.LastName = model.LastName;
+            user.PhoneNumber = model.PhoneNumber;
+            user.City = model.City;
+            user.ZipCode = model.ZipCode;
+            user.Country = model.Country;
+            user.StreetAdress = model.StreetAdress;
 
-            user.HomeAdress = model.HomeAdress;
-            user.BirthDate = model.BirthDate;
-            await _userManager.UpdateAsync(user);
 
-            await _signInManager.RefreshSignInAsync(user);
-            return RedirectToAction(nameof(Index), "Manage");
+            var result = await _userManager.UpdateAsync(user);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    _logger.LogError($"Error updating profile for user {user.Id}: {error.Description}");
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
 
+                TempData["StatusMessage"] = "Lỗi: Cập nhật hồ sơ thất bại.";
+
+                return RedirectToAction(nameof(Index), "Manage");
+            }
+            else
+            {
+                TempData["StatusMessage"] = "Đã cập nhật thông tin địa chỉ thành công.";
+                return RedirectToAction(nameof(Index), "Manage");
+            }
         }
 
+        [HttpPost]
+        public async Task<IActionResult> UploadPhotoAPI(string? id, [Bind("FileUpLoad")] UploadOneFile f)
+        {
+            var user = _context.Users.FirstOrDefault(p => p.Id == id);
+            if (user == null)
+            {
+                return NotFound("Không tồn tại người dùng!!");
+            }
+
+            if (f?.FileUpLoad == null || f.FileUpLoad.Length == 0)
+            {
+                ModelState.AddModelError("FileUpLoad", "Vui lòng chọn một file để upload.");
+                return View(f);
+            }
+
+            var uploadFolder = Path.Combine("Uploads", "Users");
+
+            if (!string.IsNullOrEmpty(user.AvatarImg))
+            {
+                var oldFile = Path.Combine(uploadFolder, user.AvatarImg);
+                if (System.IO.File.Exists(oldFile))
+                {
+                    System.IO.File.Delete(oldFile);
+                }
+            }
+
+            var fileName = Path.GetFileNameWithoutExtension(Path.GetRandomFileName()) + Path.GetExtension(f.FileUpLoad.FileName);
+            var finalFilePath = Path.Combine(uploadFolder, fileName);
+
+            using (var fileStream = new FileStream(finalFilePath, FileMode.Create))
+            {
+                await f.FileUpLoad.CopyToAsync(fileStream);
+            }
+
+            // Cập nhật ảnh đại diện mới cho user
+            user.AvatarImg = fileName;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+
+            return Ok(fileName);
+        }
 
     }
+
 }

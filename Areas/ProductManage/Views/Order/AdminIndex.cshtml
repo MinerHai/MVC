@@ -1,0 +1,132 @@
+@model List<App.Models.Orders.OrderModel>
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1 class="">📦 Quản lý đơn hàng </h1>
+    </div>
+</div>
+<div class="app-content">
+    <div class="container-fluid">
+        <form method="get" class="form-inline mb-3">
+            @Html.AntiForgeryToken()
+            <label class="mr-2">Trạng thái:</label>
+            <select name="statusFilter" class="form-control mr-3">
+                <option value="">-- Tất cả --</option>
+                <option value="Pending" selected="@(ViewBag.StatusFilter == "Pending")">Chờ xử lý</option>
+                <option value="Processing" selected="@(ViewBag.StatusFilter == "Processing")">Đang xử lý</option>
+                <option value="Completed" selected="@(ViewBag.StatusFilter == "Completed")">Hoàn tất</option>
+            </select>
+
+            <label class="mr-2">Thanh toán:</label>
+            <select name="isPaid" class="form-control mr-3">
+                <option value="">-- Tất cả --</option>
+                <option value="true" selected="@(ViewBag.IsPaid?.ToString() == "True")">Đã thanh toán</option>
+                <option value="false" selected="@(ViewBag.IsPaid?.ToString() == "False")">Chưa thanh toán</option>
+            </select>
+
+            <button type="submit" class="btn btn-primary mt-2">Lọc</button>
+        </form>
+
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Mã đơn</th>
+                    <th>Khách hàng</th>
+                    <th>Ngày đặt</th>
+                    <th>Trạng thái</th>
+                    <th>Loại thanh toán</th> 
+                    <th>Thanh toán</th>
+                    <th>Tổng tiền</th>
+                    <th>Chi tiết</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.User?.UserName</td>
+                        <td>@order.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>
+                            <select class="form-control status-select" data-id="@order.Id">
+                                <option value="Pending" selected="@(order.Status == "Pending")">Chờ xử lý</option>
+                                <option value="Processing" selected="@(order.Status == "Processing")">Đang xử lý</option>
+                                <option value="Completed" selected="@(order.Status == "Completed")">Hoàn tất</option>
+                            </select>
+                        </td>
+                        <td>
+                            @order.PaymentMethod
+                        </td>
+                        <td>
+                            <button class="btn btn-sm @(order.IsPaid ? "btn-success" : "btn-warning") toggle-paid"
+                                data-id="@order.Id">
+                                @(order.IsPaid ? "Đã thanh toán" : "Chưa thanh toán")
+                            </button>
+                        </td>
+                        <td>@order.TotalAmount.ToString("n0") đ</td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@order.Id" class="btn btn-sm btn-info">Xem</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var token = $('input[name="__RequestVerificationToken"]').val();
+
+            // Cập nhật trạng thái đơn hàng
+            $(".status-select").change(function () {
+                var orderId = $(this).data("id");
+                var newStatus = $(this).val();
+                $.ajax({
+                    url: '@Url.Action("UpdateStatus", "Order", new { area = "ProductManage" })',
+                    type: 'POST',
+                    data: { id: orderId, status: newStatus },
+                    headers: {
+                        'RequestVerificationToken': token
+                    },
+                    success: function (result) {
+                        // Có thể thêm thông báo thành công ở đây nếu muốn
+                        console.log("Status updated successfully for order " + orderId);
+                    },
+                    error: function (xhr, status, error) {
+                        // Xử lý lỗi (ví dụ: hiển thị thông báo)
+                        console.error("Error updating status:", status, error);
+                        alert("Có lỗi xảy ra khi cập nhật trạng thái.");
+                    }
+                });
+            });
+
+            // Toggle trạng thái thanh toán
+            $(".toggle-paid").click(function () {
+                var btn = $(this);
+                var orderId = btn.data("id");
+                $.ajax({
+                    url: '@Url.Action("TogglePaid", "Order", new { area = "ProductManage" })',
+                    type: 'POST',
+                    data: { id: orderId },
+                    headers: {
+                        'RequestVerificationToken': token
+                    },
+                    success: function (result) {
+                        // Reload lại trang để thấy thay đổi
+                        location.reload();
+                    },
+                    error: function (xhr, status, error) {
+                        // Xử lý lỗi
+                        console.error("Error toggling paid status:", status, error);
+                        alert("Có lỗi xảy ra khi thay đổi trạng thái thanh toán.");
+                    }
+                });
+            });
+        });
+    </script>
+}

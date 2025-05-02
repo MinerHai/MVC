@@ -28,6 +28,11 @@ namespace MVC.Controllers
             return View();
         }
 
+        public IActionResult RenderToast(string message)
+        {
+            return PartialView("_Toast", message);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

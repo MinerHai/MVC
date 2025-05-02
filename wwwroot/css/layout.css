@@ -1,3 +1,13 @@
+
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+.body{
+   font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    line-height: 1.5;
+}
 .gray-smal-text{
     color: #666 !important;
     font-size: 12px;
@@ -96,4 +106,37 @@
     height: 100%;
     position: relative;
     min-height: 100%;
+}
+
+.breadcrumb-section {
+    background-image: url('/img/breadcumbs_bg.jpg'); /* Đổi ảnh nếu cần */
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    color: white;
+}
+
+.breadcrumb-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb-item a {
+    color: gray;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #00B207; /* Bootstrap primary blue */
+   
+}
+
+.breadcrumb-item.active {
+    color: #00B207;
 }

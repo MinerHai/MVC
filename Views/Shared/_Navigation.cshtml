@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow ">
     <div class="container-fluid">
         <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">MVC</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
@@ -13,7 +13,7 @@
                             <a class="nav-link nav-text-active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link nav-text" asp-area="" asp-controller="#"
+                            <a class="nav-link nav-text" asp-area="ProductManage" asp-controller="ViewProduct"
                                 asp-action="Index">Shop</a>
                         </li>
                         <li class="nav-item me-3">
@@ -21,7 +21,7 @@
                                 asp-action="Index">Pages</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link nav-text" asp-area="" asp-controller="#"
+                            <a class="nav-link nav-text" asp-area="Blog" asp-controller="ViewPost"
                                 asp-action="Index">Blog</a>
                         </li>
                         <li class="nav-item me-3">
@@ -44,7 +44,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">
+                            <a class="nav-link text-white" asp-area="ProductManage" asp-controller="ViewProduct" asp-action="Cart">
                                 <img src="~/img/cart-icon.png" alt="" class="d-none d-sm-inline">
                                 <span class="d-inline d-sm-none">Cart</span>
                             </a>

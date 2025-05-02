@@ -1,0 +1,48 @@
+@model string
+
+<div class="toast" style="display: none;">
+    @Model
+</div>
+
+<style>
+    .toast {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #5cb85c;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        z-index: 9999;
+        opacity: 0;
+        animation: toastFade 3s forwards;
+    }
+
+    @@keyframes toastFade {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('.toast').fadeIn(200, function () {
+            $(this).delay(2600).fadeOut(200, function () {
+                $(this).remove();
+            });
+        });
+    });
+</script>

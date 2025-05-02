@@ -1,0 +1,59 @@
+@using App.Models.Product
+@model List<ProductModel>
+
+<section class="product-grid">
+   
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var p in Model)
+        {
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="@($"/contents/Products/{(p.Photos.FirstOrDefault()?.FileName ?? "no-img.png")}")" alt="product"
+                        class="product-image" />
+                    @if (p.Quantity == 0)
+                    {
+                        <span class="tag out-of-stock-tag">Out of Stock</span>
+                    }
+                    else if (p.Discount > 0)
+                    {
+                        <span class="tag sale-tag">Sale <span>@(p.Discount.ToString("0"))%</span></span>
+                    }
+                    <div class="product-actions">
+                        <button class="action-btn wishlist-btn"><i class="far fa-heart"></i></button>
+                        <button class="action-btn view-btn view-info" data-id="@p.ProductId"><i class="far fa-eye"></i></button>
+                    </div>
+
+                </div>
+                <div class="product-info">
+                    <p class="product-name">@p.Title</p>
+                    @if (p.Discount > 0)
+                    {
+                        <p class="product-price">
+                            <span class="original-price">$@((p.Price).ToString("0.00"))</span>
+                            $@((p.Price - (p.Price * p.Discount / 100)).ToString("0.00"))
+                        </p>
+                    }
+                    else
+                    {
+                        <p class="product-price">$@((p.Price).ToString("0.00"))</p>
+
+                    }
+
+                    <div class="product-rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a class="add-to-cart-btn" asp-action="Details" asp-area="ProductManage" asp-route-productslug="@p.Slug"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        }
+    }
+    else{
+        <h1 class="text-danger">No Products Found</h1>
+    }
+
+</section>

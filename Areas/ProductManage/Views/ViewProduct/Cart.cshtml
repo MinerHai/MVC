@@ -1,0 +1,506 @@
+@model List<App.Models.Product.CartItem>
+@{
+  Layout = "_Layout";
+}
+<h2>GIỎ HÀNG</h2>
+<style>
+  .shopping-cart-section {
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    /* fill_A4KKCO */
+    border: 1px solid #E6E6E6;
+    /* stroke_GDJCAK */
+    border-radius: 8px;
+    /* borderRadius: 8px */
+    padding: 20px;
+    /* Add some padding */
+  }
+
+  .cart-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 1fr auto;
+    /* Adjust columns based on content */
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* style_CAO8M0 */
+    font-size: 14px;
+    /* style_CAO8M0 */
+    line-height: 1em;
+    /* style_CAO8M0 */
+    letter-spacing: 3%;
+    /* style_CAO8M0 */
+    text-transform: uppercase;
+    /* style_CAO8M0 */
+    color: #808080;
+    /* fill_8R9DWW */
+    align-items: center;
+  }
+
+  .header-product {
+    grid-column: 1;
+  }
+
+  .header-price {
+    grid-column: 2;
+    text-align: center;
+  }
+
+  .header-quantity {
+    grid-column: 3;
+    text-align: center;
+  }
+
+  .header-subtotal {
+    grid-column: 4;
+    text-align: right;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid #E6E6E6;
+    /* stroke_GDJCAK */
+    margin: 15px 0;
+  }
+
+  .cart-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 1fr auto;
+    /* Match header columns */
+    align-items: center;
+    padding: 15px 0;
+    font-size: 16px;
+    /* Base size, adjust as needed */
+  }
+
+  .product-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* layout_T9F7HQ gap */
+    font-weight: 400;
+    /* style_YVIJKS */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+  }
+
+  .product-image {
+    width: 80px;
+    /* Adjust as needed */
+    height: 80px;
+    object-fit: cover;
+    /* Or 'contain' based on image aspect ratio */
+    border-radius: 10px;
+    /* From INSTANCE borderRadius */
+  }
+
+  .item-price {
+    text-align: center;
+    font-weight: 400;
+    /* style_YVIJKS */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+  }
+
+  .item-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    /* stroke_GDJCAK */
+    border-radius: 170px;
+    /* borderRadius: 170px */
+    padding: 8px;
+    /* layout_BOL2QS padding */
+    gap: 10px;
+    /* Add gap between elements */
+    width: fit-content;
+    /* Adjust width */
+    margin: 0 auto;
+    /* Center the quantity control */
+  }
+
+  .quantity-btn {
+    background-color: #F2F2F2;
+    /* fill_CPPIPO */
+    border: none;
+    border-radius: 50%;
+    /* Make it circular */
+    width: 24px;
+    /* Adjust size */
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666666;
+    /* stroke_MC67PK for minus */
+  }
+
+  .plus-btn {
+    color: #1A1A1A;
+    /* stroke_NPXHUN for plus */
+  }
+
+  .quantity-value {
+    font-weight: 400;
+    /* style_XKPREM */
+    font-size: 16px;
+    /* style_XKPREM */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+    min-width: 20px;
+    /* Ensure space for number */
+    text-align: center;
+  }
+
+  .item-subtotal {
+    text-align: right;
+    font-weight: 500;
+    /* style_770SRU */
+    font-size: 16px;
+    /* style_770SRU */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+  }
+
+  .remove-item-btn {
+    background: none;
+    border: 1px solid #CCCCCC;
+    /* stroke_VC6G9X */
+    color: #666666;
+    /* stroke_MC67PK */
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1;
+    margin-left: 15px;
+    /* Add some space */
+  }
+
+  .cart-actions {
+    display: flex;
+    justify-content: space-between;
+    /* layout_27A0VX */
+    margin-top: 20px;
+  }
+
+  .action-cart-btn {
+    background-color: #F2F2F2;
+    /* fill_CPPIPO */
+    border: none;
+    border-radius: 43px;
+    /* borderRadius: 43px */
+    padding: 14px 32px;
+    /* layout_HUCMYE padding */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /* style_2DAKOU */
+    font-size: 14px;
+    /* style_2DAKOU */
+    color: #4D4D4D;
+    /* fill_6M21OT */
+    cursor: pointer;
+    text-align: center;
+  }
+
+  /* Summary Section */
+  .summary-section {
+    width: 400px;
+    /* Fixed width based on design elements */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Coupon Section */
+  .coupon-section {
+    background-color: #FFFFFF;
+    /* fill_A4KKCO */
+    border: 1px solid #E6E6E6;
+    /* stroke_GDJCAK */
+    border-radius: 8px;
+    /* borderRadius: 8px */
+    padding: 20px;
+    /* layout_6K2P70 padding */
+  }
+
+  .coupon-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* style_12YNBG */
+    font-size: 20px;
+    /* style_12YNBG */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+    margin: 0 0 15px 0;
+    /* Add bottom margin */
+  }
+
+  .coupon-input-group {
+    display: flex;
+    gap: 10px;
+    /* Adjust gap */
+  }
+
+  .coupon-input {
+    flex-grow: 1;
+    border: 1px solid #E6E6E6;
+    /* stroke_GDJCAK */
+    border-radius: 46px;
+    /* borderRadius: 46px */
+    padding: 14px 24px;
+    /* layout_PPR94H padding */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* style_YVIJKS */
+    font-size: 16px;
+    /* style_YVIJKS */
+    color: #1A1A1A;
+    /* Default input color */
+  }
+
+  .coupon-input::placeholder {
+    color: #999999;
+    /* fill_LFR1KW */
+  }
+
+  .coupon-apply-btn {
+    background-color: #333333;
+    /* fill_BO1Z68 */
+    border: none;
+    border-radius: 43px;
+    /* borderRadius: 43px */
+    padding: 16px 40px;
+    /* layout_B2SSQG padding */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /* style_BSJORT */
+    font-size: 16px;
+    /* style_BSJORT */
+    color: #FFFFFF;
+    /* fill_A4KKCO */
+    cursor: pointer;
+    white-space: nowrap;
+    /* Prevent wrapping */
+  }
+
+  /* Cart Total Section */
+  .cart-total-section {
+    background-color: #FFFFFF;
+    /* fill_A4KKCO */
+    border: 1px solid #E6E6E6;
+    /* stroke_GDJCAK */
+    border-radius: 8px;
+    /* borderRadius: 8px */
+    padding: 20px;
+  }
+
+  .cart-total-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* style_12YNBG */
+    font-size: 20px;
+    /* style_12YNBG */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+    margin: 0 0 15px 0;
+  }
+
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    /* layout_M9KTKC */
+    padding: 12px 0;
+    /* layout_M9KTKC padding */
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .total-row span:first-child {
+    /* Subtotal:, Shipping: */
+    font-weight: 400;
+    /* style_KDSAPO / style_YVIJKS */
+    font-size: 14px;
+    /* style_KDSAPO */
+    color: #4D4D4D;
+    /* fill_6M21OT */
+  }
+
+  .total-row span:last-child {
+    /* $84.00, Free */
+    font-weight: 500;
+    /* style_I7RMFQ */
+    font-size: 14px;
+    /* style_I7RMFQ */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+  }
+
+  .total-row.total-final span:first-child {
+    /* Total: */
+    font-weight: 400;
+    /* style_YVIJKS */
+    font-size: 16px;
+    /* style_YVIJKS */
+    color: #4D4D4D;
+    /* fill_6M21OT */
+  }
+
+  .total-row.total-final span:last-child {
+    /* $84.00 */
+    font-weight: 600;
+    /* style_YX0KF7 */
+    font-size: 16px;
+    /* style_YX0KF7 */
+    color: #1A1A1A;
+    /* fill_05IC3O */
+  }
+
+  .summary-divider {
+    border: none;
+    border-top: 1px solid #E6E6E6;
+    /* effect_SZVG9R equivalent */
+    margin: 0;
+    /* Remove default margin */
+  }
+
+  .checkout-btn {
+    background-color: #00B207;
+    /* fill_Q8F68P */
+    border: none;
+    border-radius: 43px;
+    /* borderRadius: 43px */
+    padding: 16px 40px;
+    /* layout_715QPW padding */
+    width: 100%;
+    /* Make button full width */
+    margin-top: 20px;
+    /* Add space above */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /* style_YX0KF7 */
+    font-size: 16px;
+    /* style_YX0KF7 */
+    color: #FFFFFF;
+    /* fill_A4KKCO */
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .cart-container {
+    display: flex;
+    gap: 24px;
+    /* Gap between shopping cart and summary */
+    max-width: 1200px;
+    /* Adjust as needed */
+    width: 100%;
+  }
+</style>
+@if (Model.Count > 0)
+{
+  decimal total = 0;
+  int stt = 1;
+
+  <div class="cart-container">
+    <!-- Shopping Cart Table -->
+    <div class="shopping-cart-section">
+      <div class="cart-header">
+        <div class="header-product">Product</div>
+        <div class="header-price">Price</div>
+        <div class="header-quantity">Quantity</div>
+        <div class="header-subtotal">Subtotal</div>
+      </div>
+      <hr>
+      @foreach (var cartitem in Model)
+      {
+        var thanhtien = cartitem.quantity * cartitem.product.Price;
+        total += thanhtien;
+        <!-- Cart Item 1 -->
+        <div class="cart-item">
+          <div class="product-details">
+            <img src="@($"/contents/Products/{(cartitem.product.Photos.FirstOrDefault()?.FileName ?? "no-img.png")}")"
+              alt="product" style="max-width: 100px; max-height: 100px; object-fit: cover;">
+            <span>@cartitem.product.Title</span>
+          </div>
+          <div class="item-price">@((cartitem.product.Price - cartitem.product.Price * (cartitem.product.Discount / 100
+                    )).ToString("n0"))</div>
+      <input asp-for="@cartitem.quantity" id="@($"quantity-{cartitem.product.ProductId}")" />
+      <div class="item-subtotal">$@(thanhtien.ToString("n0"))</div>
+      <a asp-route="removecart" asp-route-productid="@cartitem.product.ProductId"><button
+          class="remove-item-btn">X</button></a>
+      <div class="cart-actions">
+        <button class="action-cart-btn update-btn updatecartitem" data-productid="@cartitem.product.ProductId">Update
+          Cart</button>
+      </div>
+    </div>
+    <hr>
+    }
+
+      <a asp-action="Index" class="action-cart-btn return-btn mt-3 text-decoration-none">Back</a>
+    </div>
+
+
+    <div class="summary-section">
+      <!-- Coupon Code -->
+      <div class="coupon-section">
+        <h3>Coupon Code</h3>
+        <div class="coupon-input-group">
+          <input type="text" placeholder="Enter code" class="coupon-input">
+          @* <button class="coupon-apply-btn">Apply Coupon</button> *@
+        </div>
+      </div>
+
+      <!-- Cart Total -->
+      <div class="cart-total-section">
+        <h3>Cart Total</h3>
+        <div class="total-row">
+          <span>Subtotal:</span>
+          <span>$@total.ToString("n0")</span>
+        </div>
+        <hr class="summary-divider">
+        <div class="total-row">
+          <span>Shipping:</span>
+          <span>Free</span>
+        </div>
+        <hr class="summary-divider">
+        <div class="total-row total-final">
+          <span>Total:</span>
+          <span>$@total.ToString("n0")</span>
+        </div>
+        <a asp-controller="Order" asp-action="Checkout" asp-area="ProductManage"><button class="checkout-btn">Đặt
+            Hàng</button></a>
+      </div>
+    </div>
+  </div>
+
+  @section Scripts {
+    <script>
+      $(document).ready(function () {
+        $(".updatecartitem").click(function (event) {
+          event.preventDefault();
+          var productid = $(this).attr("data-productid");
+          var quantity = $("#quantity-" + productid).val();
+          $.ajax({
+            type: "POST",
+            url: "@Url.RouteUrl("updatecart")",
+            data: {
+              productid: productid,
+              quantity: quantity
+            },
+            success: function (result) {
+              window.location.href = "@Url.RouteUrl("cart")";
+            }
+          });
+        });
+      });
+    </script>
+  }
+
+}
+else
+{
+  <p class="alert alert-danger">Giỏ hàng trống</p>
+}

@@ -1,0 +1,601 @@
+/* General Styles */
+
+/* Modal Styles */
+
+.close-button {
+    position: absolute;
+    top: 15px; /* Adjusted position */
+    right: 15px; /* Adjusted position */
+    background: #1A1A1A; /* Ellipse color from Figma */
+    border: none;
+    border-radius: 50%;
+    width: 30px; /* Adjust size */
+    height: 30px; /* Adjust size */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.close-button img {
+    /* The close icon in Figma seems to be made of two vectors */
+    /* We might need to adjust this if using a single SVG */
+    position: absolute; /* Position lines over each other */
+    width: 12px; /* Adjust size based on SVG */
+    height: auto;
+}
+
+.product-detail-content {
+    display: flex;
+    gap: 30px; /* Spacing between images and info */
+    height: 500px;
+}
+
+/* Product Images Section */
+.product-images {
+    display: flex;
+    gap: 20px; /* Spacing between main image and thumbnails */
+    flex-direction: row-reverse; /* Thumbnails on the left */
+    width: 1500px;
+}
+
+.main-image {
+    flex-grow: 1; /* Allow main image to take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Match modal border radius */
+    overflow: hidden; /* Ensure image stays within bounds */
+    max-width: 400px; /* Limit image size */
+    background-image: url('assets/images/product-main.png'); /* Placeholder image */
+    background-position: center;
+    background-size: cover;
+}
+
+.main-image img {
+    width: 100%;
+    opacity: 1; 
+}
+
+.thumbnail-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Gap from Figma */
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Gap from Figma */
+    max-height: 350px; /* Limit height and enable scrolling if needed */
+    overflow-y: auto; /* Add scroll if thumbnails exceed height */
+}
+
+.thumbnail {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    object-fit: cover;
+    border-radius: 3px; /* Border radius from Figma */
+    cursor: pointer;
+    border: 1px solid transparent; /* Default border */
+    padding: 2px; /* Space for active border */
+    background-color: #FFFFFF; /* Background from Figma */
+}
+
+.thumbnail:hover {
+    border: 1px solid #00B207; /* Active border color from Figma */
+}
+
+.slider-arrow {
+    background: #FFFFFF; /* Background from Figma */
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-arrow img {
+    width: 16px; /* Adjust size */
+    height: 16px; /* Adjust size */
+}
+
+.slider-arrow.up img {
+    transform: rotate(180deg); /* Point arrow up */
+}
+
+/* Product Info Section */
+.product-info-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Consistent gap */
+    padding: 16px;
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Gap from Figma */
+}
+
+.product-name-details {
+    font-size: 36px; /* Font size from Figma */
+    font-weight: 600; /* Font weight from Figma */
+    color: #1A1A1A; /* Color from Figma */
+    margin: 0;
+    line-height: 1.2; /* Line height from Figma */
+}
+
+.stock-status {
+    background-color: rgba(32, 181, 38, 0.2); /* Background from Figma */
+    color: #2C742F; /* Text color from Figma */
+    font-size: 14px; /* Font size from Figma */
+    font-weight: 400; /* Font weight from Figma */
+    padding: 4px 8px; /* Padding from Figma */
+    border-radius: 4px; /* Border radius from Figma */
+    white-space: nowrap;
+}
+.stock-status-out-of-stock {
+    background-color: #FBDBDA;
+    color: #EA4B48; 
+}
+
+.product-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Gap from Figma */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Small gap between stars */
+}
+
+.rating img {
+    width: 16px; /* Adjust star size */
+    height: 16px; /* Adjust star size */
+}
+
+.review-count {
+    font-size: 14px; /* Font size from Figma */
+    color: #666666; /* Color from Figma */
+    margin-left: 4px; /* Space before review count */
+}
+
+.separator {
+    font-size: 14px; /* Font size from Figma */
+    color: #B3B3B3; /* Color from Figma */
+}
+
+.sku {
+    display: flex;
+    gap: 4px; /* Gap from Figma */
+    font-size: 14px; /* Font size from Figma */
+}
+
+.sku-label {
+    color: #333333; /* Color from Figma */
+    font-weight: 500; /* Font weight from Figma */
+}
+
+.sku-value {
+    color: #666666; /* Color from Figma */
+    font-weight: 400; /* Font weight from Figma */
+}
+
+.product-price-details {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Gap from Figma */
+}
+
+.original-price-details{
+    font-size: 20px; /* Font size from Figma */
+    color: #B3B3B3; /* Color from Figma */
+    text-decoration: line-through;
+    font-weight: 400; /* Font weight from Figma */
+}
+
+.discounted-price-details {
+    font-size: 24px; /* Font size from Figma */
+    font-weight: 500; /* Font weight from Figma */
+    color: #2C742F; /* Color from Figma */
+}
+
+.discount-badge-details {
+    background-color: rgba(234, 75, 72, 0.1); /* Background from Figma */
+    color: #EA4B48; /* Text color from Figma */
+    font-size: 14px; /* Font size from Figma */
+    font-weight: 500; /* Font weight from Figma */
+    padding: 3px 10px; /* Padding from Figma */
+    border-radius: 30px; /* Border radius from Figma */
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #E6E6E6; /* Color from Figma */
+    margin: 0; /* Reset margin */
+}
+
+.product-description {
+    font-size: 14px; /* Font size from Figma */
+    color: #808080; /* Color from Figma */
+    line-height: 1.5; /* Line height from Figma */
+    margin: 0;
+}
+
+.product-actions-details {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Gap from Figma */
+    padding: 18px 0; /* Padding from Figma */
+    border-top: 1px solid #E6E6E6; /* Border from Figma */
+    border-bottom: 1px solid #E6E6E6; /* Border from Figma */
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E6E6; /* Border from Figma */
+    border-radius: 170px; /* Border radius from Figma */
+    padding: 8px; /* Padding from Figma */
+    background-color: #FFFFFF; /* Background from Figma */
+}
+
+.quantity-btn {
+    background-color: #F2F2F2; /* Background from Figma */
+    border: none;
+    border-radius: 50%;
+    width: 32px; /* Adjust size */
+    height: 32px; /* Adjust size */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-btn img {
+    width: 14px; /* Adjust icon size */
+    height: 14px; /* Adjust icon size */
+}
+
+.quantity-value {
+    font-size: 16px; /* Font size from Figma */
+    font-weight: 400; /* Font weight from Figma */
+    color: #1A1A1A; /* Color from Figma */
+    padding: 0 16px; /* Horizontal padding */
+    min-width: 20px; /* Ensure space for number */
+    text-align: center;
+}
+
+.add-to-cart-btn-details {
+    background-color: #00B207; /* Background from Figma */
+    color: #FFFFFF; /* Text color from Figma */
+    border: none;
+    border-radius: 43px; /* Border radius from Figma */
+    padding: 10px 10px; /* Padding from Figma */
+    font-size: 16px; /* Font size from Figma */
+    font-weight: 600; /* Font weight from Figma */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Gap from Figma */
+    flex-grow: 1; /* Allow button to grow */
+    justify-content: center;
+}
+
+.add-to-cart-btn-details:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.add-to-cart-btn-details img {
+    /* The cart icon in Figma seems to be a rectangle, likely an SVG placeholder */
+    width: 18px; /* Adjust size */
+    height: 18px; /* Adjust size */
+}
+.add-to-cart-btn-details:hover{
+    background-color: #18db1e;
+}
+
+.wishlist-btn {
+    background-color: rgba(32, 181, 38, 0.1); /* Background from Figma */
+    border: none;
+    border-radius: 43px; /* Border radius from Figma */
+    padding: 16px; /* Padding from Figma */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishlist-btn img {
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+}
+
+.product-category {
+    display: flex;
+    gap: 6px; /* Gap from Figma */
+    font-size: 14px; /* Font size from Figma */
+}
+
+.category-label {
+    color: #1A1A1A; /* Color from Figma */
+    font-weight: 500; /* Font weight from Figma */
+}
+
+.category-value {
+    color: #808080; /* Color from Figma */
+    font-weight: 400; /* Font weight from Figma */
+}
+
+
+.custom-btn
+{
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+
+    width: 10%;
+    
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    opacity: 0px;
+    background-color: #EFF7EF;
+    color: #00B207;
+}
+.custom-btn:hover{
+    background-color: #cddfcd;
+}
+
+.form-container {
+    width: 80%;
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 5%;
+
+    .left-content{
+        width: 50%;
+        .desc-bar{
+            margin-bottom: 2%;
+            margin-top: 1%;
+
+            display: flex;
+            width: 100%;
+            gap: 1%;
+            .tick-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3%;
+                border-radius: 50%;
+                background-color: #00B207;
+            }
+        }
+    }
+    .right-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        width: 50%;
+        gap: 2%;
+        .the-icon img {
+            margin-left: 20%;
+            width: 80%;
+        }
+        
+        .r-content-feature{
+            padding: 3%;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            width: 74%;
+            margin-left: 20%;
+            gap: 4%;
+
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #E6E6E6;
+            
+            .per-feature{
+                display: flex;
+                align-items: center;
+                width: 50%;
+                gap: 3%;
+                .dis-icon{
+                    width: 10%;
+                }
+            }
+        }
+
+    }
+
+    .review-bar{
+        width: 60%;
+        margin-bottom: 3%;
+        .info-bar{
+            position: relative;
+            gap: 1%;
+            align-items: center;
+            height: 30px;
+            display: flex;
+            width: 100%;
+            .user-avatar{ 
+                width: 7%;
+                img{
+                    border-radius: 50%;
+                }
+            }
+
+            .name-rate{
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                .the-icon{
+                    height: 90%;
+                    width: 90%;
+                    margin: 0;
+                }
+            }
+            .time-cmt{
+                position:absolute;
+                right: 0;
+            }
+        }
+        .the-cmt{
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        
+    }
+    
+    p{
+        margin: 0;
+        font-size: 10px;
+        text-align: left;
+        color: #808080;
+    }
+    #black-text{
+        color: black;
+        font-size: 12px;
+    }
+    #white-text{
+        color: #808080;
+        font-size: 12px;
+    }
+}
+.product-nav
+{   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+    
+}
+
+.form-button{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: #808080;
+    cursor: pointer;
+    .cus {
+        display: none;
+    }
+}
+
+.active-button {
+    color: #1A1A1A; 
+
+    .cus{
+    margin: 0;
+    height: 2px;
+    background-color: #20B526;
+    border: none;
+    display: block;
+    }
+}
+
+
+/* Responsive Adjustments (Optional Example) */
+@media (max-width: 768px) {
+    .product-detail-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+        width: 350px;
+    }
+    .main-image{
+        width: 250px;
+        height: 250px;
+    }
+
+    .thumbnail-slider {
+        flex-direction: row; /* Thumbnails horizontal */
+        width: 100%;
+        justify-content: center;
+    }
+
+    .thumbnails {
+        flex-direction: row; /* Thumbnails horizontal */
+        max-height: none;
+        overflow-x: auto; /* Scroll horizontally */
+        overflow-y: hidden;
+    }
+
+     .slider-arrow.up, .slider-arrow.down {
+        display: none; /* Hide vertical arrows on small screens */
+    }
+
+    .main-image {
+      
+        background-image: url('assets/images/product-main.png'); /* Placeholder image */
+        background-color: red;
+        
+    }
+
+    .product-actions-details {
+        flex-direction: column;
+        align-items: stretch; /* Make buttons full width */
+    }
+
+    .add-to-cart-btn-details {
+        width: auto; /* Reset fixed width */
+    }
+
+    .product-nav{
+        margin-top: 5%;
+    }
+    .form-container {
+        p{
+            font-size: 8px;
+        }
+        
+        #black-text{
+            font-size: 10px;
+        }
+        #white-text{
+            font-size: 10px
+         }
+        .left-content{
+            .desc-bar{
+                width: 200%;
+                .tick-icon{
+                    width: 5%;
+                }
+            }
+        }
+        .product-nav{
+            margin-top: 5%;
+        }
+    }
+
+    #form2{
+        .left-content{
+            .desc-bar{
+                width: 100%;
+            }
+        }
+    }
+    .custom-btn
+    {
+        padding: 5px;
+        width: 50%;
+    }
+}

@@ -1,0 +1,70 @@
+@using Microsoft.IdentityModel.Tokens
+@model App.Components.CategorySideBar.CategorySideBarData
+@{
+
+}
+
+@if (Model.Categories.Count > 0)
+{
+
+    <div class="filter-section search-section">
+        <div class="search-input">
+            <img src="~/img/search-icon.svg" alt="Search Icon">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+    <hr class="divider">
+    <div class="filter-section categories-section">
+        <h4>Top Categories</h4>
+        <ul>
+            <li>
+                <a class="text-decoration-none text-reset" asp-controller="ViewPost" asp-action="Index"
+                    asp-route-categoryslug="">
+                    All Post
+                </a>
+
+            </li>
+            @foreach (var category in Model.Categories)
+            {
+                <li><a class="text-decoration-none text-reset" asp-controller="ViewPost" asp-action="Index"
+                        asp-route-categoryslug="@category.Slug">
+                        @category.Title
+                    </a>
+                    <span>(@(Model.PostCounts.ContainsKey(category.Id) ? Model.PostCounts[category.Id] : 0))</span>
+                </li>
+            }
+        </ul>
+    </div>
+    <hr class="divider">
+    <!-- Recently Added Section -->
+    <div class="filter-section recent-posts-section">
+        <h4>Recently Added</h4>
+        @foreach (var post in Model.RecentPosts)
+        {
+            <div class="recent-post">
+                @if (post.FileName.IsNullOrEmpty())
+                {
+
+                    <a asp-action="Detail" asp-area="Blog" asp-route-postslug="@post.Slug"><img src="~/img/no-img.png"
+                            alt="Recent Post Image"></a>
+                }
+                else
+                {
+                    <a asp-action="Detail" asp-area="Blog" asp-route-postslug="@post.Slug">
+                        <img src="/contents/Posts/@post.FileName" alt="Recent Post Image">
+                    </a>
+                }
+                <div class="post-info">
+                    <p>@post.Title</p>
+                    <div class="date">
+                        <img src="~/img/calendar-icon.svg" alt="Calendar Icon">
+                        <span>@post.DateUpdated.ToString("MMM dd, yyyy")</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+
+}

@@ -5,9 +5,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1>Danh sách danh mục bài đăng</h1>
+    </div>
+</div>
+<hr>
 
-<p>
+<div class="app-content">
+    <!--begin::Container-->
+    <div class="container-fluid">
+<p> 
     <a class="btn btn-primary" asp-action="Create">Create New</a>
 </p>
 <table class="table">
@@ -41,9 +49,8 @@
                 @Html.DisplayFor(modelItem => item.Slug)
             </td>
             <td>
-                
-                <a class="text-decoration-none" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a class="text-decoration-none" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="text-decoration-none btn btn-info text-white" asp-action="Edit" asp-route-id="@item.Id" >Edit</a> |
+                <a class="text-decoration-none btn btn-danger" asp-action="Delete" asp-route-id="@item.Id" >Delete</a>
             </td>
         </tr>
         if (item.CategoryChildren?.Count > 0){
@@ -53,3 +60,5 @@
         }
     }
 }
+    </div>
+</div>

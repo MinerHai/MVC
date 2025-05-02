@@ -1,0 +1,17 @@
+@model App.Components.CategoryProductSideBar.CategoryProductSideBarData
+@{
+    
+}
+
+@if (Model.Categories.Count > 0)
+{
+    <ul>
+        @foreach(var category in Model.Categories){
+            <li>
+                <a asp-controller="ViewProduct" asp-action="Index" asp-route-categoryslug = "@category.Slug">
+                    @category.Title
+                    </a>
+            </li>
+        }
+    </ul>
+}

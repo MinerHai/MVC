@@ -1,0 +1,80 @@
+@model List<Post>
+@using App.Models
+@using Microsoft.IdentityModel.Tokens
+@using static App.Components.CategorySideBar
+@{
+    List<Category> categories = ViewBag.categories as List<Category> ?? new List<Category>();
+    Category category = ViewBag.category as Category ?? new Category();
+    var categorySlug = ViewBag.categorySlug ?? "";
+    var postCounts = ViewBag.PostCounts as Dictionary<int, int> ?? new Dictionary<int, int>();
+    var recentPosts = ViewBag.RecentPosts as List<Post> ?? new List<Post>();
+}
+
+@section SideBar {
+    @await Component.InvokeAsync("CategorySideBar", new CategorySideBarData(){
+    Categories = categories,
+categorySlug = categorySlug,
+PostCounts = postCounts,
+RecentPosts = recentPosts
+})
+}
+
+
+
+
+<div class="container mb-5">
+    <main class="blog-content">
+        <div class="blog-header">
+
+            <div class="sort-by">
+                <span>Sort by:</span>
+                <div class="dropdown">
+                    <span>Latest</span>
+                    <img src="~/img/chevron-down.svg" alt="Dropdown Arrow">
+                </div>
+            </div>
+            <p>@Model.Count Results Found</p>
+        </div>
+        <div class="blog-grid">
+            @foreach (var p in Model)
+            {
+                <div class="blog-card">
+                    @if (p.FileName.IsNullOrEmpty())
+                    {
+                        <img src="~/img/no-img.png" alt="Blog Image" class="blog-card-image">
+                    }
+                    else
+                    {
+                        <img src="/contents/Posts/@p.FileName" alt="Blog Image" class="blog-card-image">
+                    }
+                    <div class="blog-card-info">
+                        <div class="meta-info">
+                            <div class="meta-item">
+                                <img src="~/img/tag-icon.svg" alt="Tag Icon">
+                                <span>Blog</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="~/img/user-icon.svg" alt="User Icon">
+                                <span>By @p.Author.UserName</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="~/img/comment-icon.svg" alt="Comment Icon">
+                                <span>@p.Comments?.Count Comments</span>
+                            </div>
+                        </div>
+                        <h5>@p.Title</h5>
+                        <a asp-action="Detail" asp-route-postslug="@p.Slug" class="read-more">
+                            Read More
+                            <img src="~/img/arrow-right.svg" alt="Arrow Right">
+                        </a>
+                    </div>
+                </div>
+            }
+
+        </div>
+</div>
+<div class="d-flex align-items-center justify-content-center">
+    <partial name="_PagingXTL" model="@ViewBag.pagingModel"></partial>
+</div>
+
+
