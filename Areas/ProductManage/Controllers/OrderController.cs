@@ -10,15 +10,19 @@ namespace MVC.Areas_Product_Controllers
     [Area("ProductManage")]
     public class OrderController : Controller
     {
+        private readonly IVnPayService _vnPayService;
         private readonly AppDbContext _context;
         private readonly UserManager<AppUser> _userManager;
         private readonly CartServices _cartService;
+        [TempData]
+        public string StatusMessage { get; set; }
 
-        public OrderController(AppDbContext context, UserManager<AppUser> userManager, CartServices cartService)
+        public OrderController(AppDbContext context, UserManager<AppUser> userManager, CartServices cartService, IVnPayService vnPayService)
         {
             _context = context;
             _userManager = userManager;
             _cartService = cartService;
+            _vnPayService = vnPayService;
         }
 
         [HttpGet]
@@ -66,7 +70,16 @@ namespace MVC.Areas_Product_Controllers
             // Lưu vào DB
             _context.Order.Add(model);
             await _context.SaveChangesAsync();
+            if (model.PaymentMethod == "Online")
+            {
+                // string returnUrl = Url.Action("ConfirmPayment", "Orders", new { orderId = model.OrderId }, Request.Scheme);
 
+                // Tạo link thanh toán MoMo (cần có class MoMoService)
+                // string paymentUrl = MoMoService.CreatePaymentUrl(model, returnUrl);
+
+                // return Redirect(paymentUrl); // chuyển hướng đến MoMo
+            }
+            StatusMessage = "Đặt hàng thành công!";
             // Xóa giỏ hàng
             _cartService.ClearCart();
 
@@ -108,14 +121,34 @@ namespace MVC.Areas_Product_Controllers
         [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> UpdateStatus(int id, string status)
         {
-            var order = await _context.Order.FindAsync(id);
+            var order = await _context.Order
+                                      .Include(o => o.OrderItems)
+                                      .ThenInclude(oi => oi.Product)
+                                      .FirstOrDefaultAsync(o => o.Id == id);
+
             if (order == null) return NotFound();
+
+            // Nếu chuyển sang "Completed", trừ kho
+            if (status == "Completed" && order.Status != "Completed")
+            {
+                foreach (var item in order.OrderItems)
+                {
+                    var product = item.Product;
+                    if (product != null)
+                    {
+                        product.Quantity -= item.Quantity;
+
+                        // Kiểm tra nếu âm thì gán về 0
+                        if (product.Quantity < 0)
+                            product.Quantity = 0;
+                    }
+                }
+            }
 
             order.Status = status;
             await _context.SaveChangesAsync();
             return Ok();
         }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Administrator")]
@@ -149,6 +182,14 @@ namespace MVC.Areas_Product_Controllers
             }
 
             return View(order);
+        }
+
+        [HttpGet]
+        public IActionResult PaymentCallbackVnpay()
+        {
+            var response = _vnPayService.PaymentExecute(Request.Query);
+
+            return Json(response);
         }
 
 

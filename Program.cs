@@ -12,6 +12,7 @@ var configuration = builder.Configuration;
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(); // Thêm dịch vụ Razor Pages
 
+
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     string connectString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -93,6 +94,9 @@ builder.Services.AddSession(cfg => {                    // Đăng ký dịch v�
     cfg.IdleTimeout = new TimeSpan(0,30, 0);           // Thời gian tồn tại của Session
 });
 
+// VNPay API
+
+builder.Services.AddScoped<IVnPayService, VnPayService>();
 //build
 var app = builder.Build();
 

@@ -4,6 +4,7 @@
     Layout = "_Layout";
     var cartItems = cartService.GetCartItems();
     decimal total = 0;
+    var username = User.Identity.Name;
 }
 
 <h2>Thông tin đơn hàng</h2>
@@ -51,6 +52,7 @@
             <button type="submit" class="btn btn-primary mt-3">Xác nhận đặt hàng</button>
         </div>
 
+
         <div class="col-md-6">
             <h4>Sản phẩm trong đơn hàng</h4>
             <table class="table">
@@ -63,17 +65,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach (var item in cartItems)
-                {
-                    var thanhtien = item.quantity * item.product.Price;
-                    total += thanhtien;
-                    <tr>
-                        <td>@item.product.Title</td>
-                        <td>@item.product.Price.ToString("n0")</td>
-                        <td>@item.quantity</td>
-                        <td>@thanhtien.ToString("n0")</td>
-                    </tr>
-                }
+                    @foreach (var item in cartItems)
+                    {
+                        var thanhtien = item.quantity * item.product.Price;
+                        total += thanhtien;
+                        <tr>
+                            <td>@item.product.Title</td>
+                            <td>@item.product.Price.ToString("n0")</td>
+                            <td>@item.quantity</td>
+                            <td>@thanhtien.ToString("n0")</td>
+                        </tr>
+                    }
                 </tbody>
                 <tfoot>
                     <tr>
@@ -84,4 +86,11 @@
             </table>
         </div>
     </div>
+</form>
+<form method="POST" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment" asp-area="">
+    <input type="hidden" name="Name" value="@username" />
+    <input type="hidden" name="Amount" value="@(Convert.ToInt64((decimal)total * 100))" />
+    <input type="hidden" name="OrderDescription" value="Thanh toán qua VNPAY" />
+    <input type="hidden" name="OrderType" value="other" />
+    <button type="submit" class="btn btn-primary mt-3">Thanh toán qua VNPAY</button>
 </form>

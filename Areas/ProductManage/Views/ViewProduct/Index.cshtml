@@ -6,6 +6,7 @@
     CategoryProduct category = ViewBag.category as CategoryProduct ?? new CategoryProduct();
     var categorySlug = ViewBag.categorySlug ?? "";
 }
+<partial name="_StatusMessage" />
 @model List<ProductModel>
 <section class="discount-banner">
     <div class="discount-badge">
