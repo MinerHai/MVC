@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R/4cezD/X0bTcHwi0dnb00NfSuiZFDBns1MXZ2QH/zw=",
+  "Hash": "aSpsBfjyP+PzBCujAaoSXRMTd8EsWBz68q284Cgipjk=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -59,6 +59,27 @@
       "OriginalItemSpec": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MVC.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\about-page.css",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "css/about-page#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2hdjdhvh9o",
+      "Integrity": "9gvuPNKZ4H1zyEqxUa02148v1Lhqcg+GzNXBckR1hEw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\about-page.css"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\blog.css",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -78,6 +99,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\blog.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\contact.css",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "css/contact#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2qhukjl3qk",
+      "Integrity": "xnoONWjcNGz9BlF9bsDKYx6HwTFZ9qmYIHZN+GZxZS0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\contact.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\dashboard.css",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bz93219l3c",
+      "Integrity": "ufRJ2d0iCXjzNZOB0zSpfltLhl8w53SVC5ZKvftz8ZI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\homepage.css",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "css/homepage#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dzwxh967iq",
+      "Integrity": "ObrjW36N8QMS2rQf6T+3ppReFxNUQtkixZtbZ+TBLiU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\homepage.css"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\layout.css",
@@ -330,6 +414,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\arrow-right.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\banner-about-2.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/banner-about-2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0v7jzl5368",
+      "Integrity": "jDXKsFQNDSVNsc+3Zm/EYJSyE3xUK9McMY/A0P1TQWo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\banner-about-2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (3).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/BG (3)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bxmbc3lsxg",
+      "Integrity": "Me9HEWxzjqa4DsJ1h8UryOyqSfAQmqGU+3yj0osc0GA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\BG (3).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (4).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/BG (4)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iz5kf1cor0",
+      "Integrity": "stFAPt05g/jxWcnBEFW+9tXwCi83wEomVomitti3mgU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\BG (4).png"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\blog-1.png",
@@ -647,6 +794,27 @@
       "OriginalItemSpec": "wwwroot\\img\\chevron-down.svg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\chuaodo.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/chuaodo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "axqvpdi4p2",
+      "Integrity": "8jjl5eW8NpCEp7ai06qAeuoZ5Mlxw9nELHRx4qew+Ec=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\chuaodo.png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\comment-icon.svg",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -666,6 +834,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\comment-icon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\delivery-truck.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/delivery-truck#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h46tdsf76c",
+      "Integrity": "QZE3n/eu8TYgcEQusJOjaFGcttaQEn0AeHg6psUAxU4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\delivery-truck.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\desktop.ini",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/desktop#[.{fingerprint}]?.ini",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "651meiqd0o",
+      "Integrity": "SuV2UWQUvPdQqBzmkz0tun7g26DrRr5eQ8499ceCWZo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\desktop.ini"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\discount-banner-bg.png",
@@ -773,6 +983,174 @@
       "OriginalItemSpec": "wwwroot\\img\\google-play-img-dowload.png"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (10).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (10)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c1gaivs2b5",
+      "Integrity": "sN3fca/a2TU4RbznhalxdR6BtuoReekTPZXGUU/iBoQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (10).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (11).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (11)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "179qp11s2y",
+      "Integrity": "8+EZJB5IH1GaHhTxh45NRoYh6M5umiLueuxwLHP8OPE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (11).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (3).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (3)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ffq08ulbmw",
+      "Integrity": "NSqkNpqRUVGdej4KZ2ddr4lgxEexn0RhOzoWZkGmM5s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (3).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (4).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (4)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2stdzu4g4h",
+      "Integrity": "/qydPvNh9U3SQxS7j2xii1BVVxt7/KkTCDNgNvNEmVU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (4).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (5).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (5)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2gmv3pdy6e",
+      "Integrity": "YrrTI5/WIQwLerBa3REV9A85w4pAj1oVEKYZu83/d5A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (5).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (6).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (6)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z95o2m57dp",
+      "Integrity": "SWUBJQ/VScna2H1Zy6goeQYg7GV7DHCibvi7whLGjck=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (6).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (7).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (7)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gb412zjtnq",
+      "Integrity": "HOoCDYOGZOZxGT8YcS3gJcMI1wABrRwCynT9b9zsj6M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (7).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (9).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Group (9)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t9bpzdlqup",
+      "Integrity": "r9Mxcgac/kulSEmAnXJGhx+WUDjVjJbGGEDaeCPnAoM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Group (9).png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\heart-icon.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -815,6 +1193,27 @@
       "OriginalItemSpec": "wwwroot\\img\\heart.svg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\icon_about.svg",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/icon_about#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x97x31f5i2",
+      "Integrity": "FVqiTSEgoeFd4M86wJWECxx8XLtpXpJZVTPUdnUOahE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icon_about.svg"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\icon.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -834,6 +1233,258 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (1).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (1)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s3ao28zu0w",
+      "Integrity": "2KTr5UdJ+9nF33d4QTaLum5QUZL/xgb2016lG9tQc6U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (10).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (10)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h8gw7h4kua",
+      "Integrity": "MaWuMhVtxCUXNAsio1a1pB48yxXDh7TT/9WJI3MriFw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (10).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (11).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (11)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "62ppojnqf6",
+      "Integrity": "Hn93jdTtFEMx6vnNX/Z+XkzRwmGjiGUie1j0xcNc2yQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (11).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (12).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (12)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s8le0ezjuk",
+      "Integrity": "9LTUUndBQjDiTivdB6ZYU9KHzB0yovKHrYiHdfeqzQg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (12).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (2).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (2)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e5l3ph8amv",
+      "Integrity": "LtW+LCIC9qfU9PuJm/1U3Ghz5Vpat7imF6ECxl+mAmM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (2).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (3).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (3)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hkvzzspy34",
+      "Integrity": "b3KL3SSatD77BOincRmCnX3dKTaOcT+dFO9josltt1A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (3).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (4).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (4)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "93rkkqprdm",
+      "Integrity": "JVJSc5VO1WwMec1JgNF4e0sv9XF6M7a1BEoYrAMKiJE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (4).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (5).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (5)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bwprxfegsv",
+      "Integrity": "2/gfuTAG6AtLseam+wTuToYqr7D1/El0a3IBmvclXVE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (5).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (6).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (6)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "93we1pb5g7",
+      "Integrity": "C9FoSDtSZPO953ivIgrQGCuQUCdKpM+rpep0G01yIU4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (6).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (7).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (7)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v7f5fo2hd6",
+      "Integrity": "tfQmfMlSlXSSRdv2JxfivVM+DmmeQvH4CueKjuW7YFo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (7).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (8).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (8)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yqhuzdkylm",
+      "Integrity": "Wsz/yeZ3P5oRigW2QcFCUOVwwFPBTVOsg/c53WDoc0w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (8).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (9).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/image 1 (9)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0t58mg9ofa",
+      "Integrity": "nIo3It/4NkL1YtwpPiaVMXtZnhGSRCvNdTzSJDAWnwc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image 1 (9).png"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\instagram-icon.svg",
@@ -878,6 +1529,27 @@
       "OriginalItemSpec": "wwwroot\\img\\leaf-1.png"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\leaf-2.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/leaf-2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pf7fdq991z",
+      "Integrity": "m4cubDWYHhaX6N8Gpk6IZd6Sz2/WfFdxhJwiICvF00I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\leaf-2.png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\link-icon.svg",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -897,6 +1569,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\link-icon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\local.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/local#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b7sphq1o07",
+      "Integrity": "B8Rrv25KY6Z7SnCyQZXAQ+N4qmGgpsdQes7VfAB/0iE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\local.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\mail.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/mail#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qsdg2w0wwu",
+      "Integrity": "JpRMJLz3RriVkp8WYtN/lj8F99iQ/NWDQ0mohqp/mRQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\mail.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Map_contact.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Map_contact#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j9goe9jfbj",
+      "Integrity": "V+oipu8agtE38jyRnuBT6fLgetWZxW7Js9pdbuenF/Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Map_contact.png"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\map_pin.png",
@@ -962,6 +1697,27 @@
       "OriginalItemSpec": "wwwroot\\img\\minus.svg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\muiten.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/muiten#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vm2x8u5a34",
+      "Integrity": "aWT/cg0NcBTkUqyTsDDTvbHn2s74sJ/DQy1JxKEC178=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\muiten.png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\no-img.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -983,6 +1739,27 @@
       "OriginalItemSpec": "wwwroot\\img\\no-img.png"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\ongchucachua.jpg",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/ongchucachua#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wqs1j68xv7",
+      "Integrity": "OC2+FzgS1qSp+OYzKG9nKgop1VRm4Ax2ubOT+I+cfBo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ongchucachua.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\payment.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -1002,6 +1779,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\payment.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\phone_contact.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/phone_contact#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "imyh350opu",
+      "Integrity": "dh8q+SFhAsnyOg5dqnav8iHU4cnx8Vj/uLyfhvdzMh4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\phone_contact.png"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\phone-icon.png",
@@ -1256,6 +2054,90 @@
       "OriginalItemSpec": "wwwroot\\img\\recent-3.png"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (1).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Rectangle 54 (1)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dq2343kzbp",
+      "Integrity": "a1/YJYH2vCu+nPYiyCozO43+M8W2220JETcMTEZ8W88=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Rectangle 54 (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (2).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Rectangle 54 (2)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mo2zkqu0on",
+      "Integrity": "VhTWY5f09E1dAJvoh2OApIdbqRWKqF0PAe/PHyOhv00=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Rectangle 54 (2).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Rectangle 54#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qe5bv4vzq5",
+      "Integrity": "3lA/K4XSiyGWXFZgHGHShDWplMZt4HO/t87J35hfyss=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Rectangle 54.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Rectangle#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j0xn6gfr5z",
+      "Integrity": "HUMXbrj3QWGxlbxQzXN0StHlui4/LpSWT+9vMhuj1cw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Rectangle.png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\search-icon.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -1298,6 +2180,27 @@
       "OriginalItemSpec": "wwwroot\\img\\search-icon.svg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\shopping-bag.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/shopping-bag#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gcu07rysn4",
+      "Integrity": "YJO2TOyvt1KJR08XOIwgGwc0gcv9GKaWEM0neJVou8w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shopping-bag.png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\star.svg",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -1319,6 +2222,27 @@
       "OriginalItemSpec": "wwwroot\\img\\star.svg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\stars-1.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/stars-1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4x7ryzbkey",
+      "Integrity": "KCEYRnhGBCylPvY+iSFIqj3kYiUISfQOv6lOQ2t27O0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\stars-1.png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\tag-icon.svg",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -1338,6 +2262,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\tag-icon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\tick_about.svg",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/tick_about#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d2ncy3g8ob",
+      "Integrity": "O7IIgNb+rkayruUtmm6cpLs/XPzypL8+l6dS6GEYtDY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\tick_about.svg"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\user-1.png",
@@ -1466,6 +2411,90 @@
       "OriginalItemSpec": "wwwroot\\img\\user-icon.svg"
     },
     {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (4).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Vector (4)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "snwneoxoh1",
+      "Integrity": "6LxMmdx4DGeK8I27fe3YUZcOoFoKi2zm4KxKi3vvMVw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Vector (4).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (5).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Vector (5)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kspl0poprj",
+      "Integrity": "LMZBhz7PhobNOIB2Si1wcm+jsxz63ij4AqOnXYpfnQ8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Vector (5).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (6).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Vector (6)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "abny64kq1j",
+      "Integrity": "hsCJ0pbXQ5piYZPQI71iAl4EIte6urHTlJCjxoMixE8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Vector (6).png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (7).png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/Vector (7)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4b5nzdlk28",
+      "Integrity": "YN6o2x+X1MeLDFrrUZD+EdMOMfTIaUGyl9WG+lg9iXE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Vector (7).png"
+    },
+    {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Video.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -1506,6 +2535,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\visa.png"
+    },
+    {
+      "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "img/z5380488750276_46c393994d450b59e11fc229af8cd9d5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "clqc59e4ev",
+      "Integrity": "YCWx7/rteNSySNIWUjfqlDt6+FBL0mYujdtJn9eCFkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg"
     },
     {
       "Identity": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\js\\form.js",
@@ -24001,6 +25051,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/about-page.2hdjdhvh9o.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\about-page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9gvuPNKZ4H1zyEqxUa02148v1Lhqcg+GzNXBckR1hEw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2hdjdhvh9o"
+        },
+        {
+          "Name": "label",
+          "Value": "css/about-page.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9gvuPNKZ4H1zyEqxUa02148v1Lhqcg+GzNXBckR1hEw="
+        }
+      ]
+    },
+    {
+      "Route": "css/about-page.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\about-page.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9gvuPNKZ4H1zyEqxUa02148v1Lhqcg+GzNXBckR1hEw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9gvuPNKZ4H1zyEqxUa02148v1Lhqcg+GzNXBckR1hEw="
+        }
+      ]
+    },
+    {
       "Route": "css/blog.a6nwyqe4ii.css",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\blog.css",
       "Selectors": [],
@@ -24079,6 +25211,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-rtgm7D1Fl3/U715kWJUwOJPI7K5QFkTu6LnxKNNzLd8="
+        }
+      ]
+    },
+    {
+      "Route": "css/contact.2qhukjl3qk.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xnoONWjcNGz9BlF9bsDKYx6HwTFZ9qmYIHZN+GZxZS0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 06:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2qhukjl3qk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/contact.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xnoONWjcNGz9BlF9bsDKYx6HwTFZ9qmYIHZN+GZxZS0="
+        }
+      ]
+    },
+    {
+      "Route": "css/contact.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xnoONWjcNGz9BlF9bsDKYx6HwTFZ9qmYIHZN+GZxZS0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 06:13:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xnoONWjcNGz9BlF9bsDKYx6HwTFZ9qmYIHZN+GZxZS0="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.bz93219l3c.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ufRJ2d0iCXjzNZOB0zSpfltLhl8w53SVC5ZKvftz8ZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 07:29:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bz93219l3c"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ufRJ2d0iCXjzNZOB0zSpfltLhl8w53SVC5ZKvftz8ZI="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4728"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ufRJ2d0iCXjzNZOB0zSpfltLhl8w53SVC5ZKvftz8ZI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 07:29:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ufRJ2d0iCXjzNZOB0zSpfltLhl8w53SVC5ZKvftz8ZI="
+        }
+      ]
+    },
+    {
+      "Route": "css/homepage.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\homepage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ObrjW36N8QMS2rQf6T+3ppReFxNUQtkixZtbZ+TBLiU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 05:27:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ObrjW36N8QMS2rQf6T+3ppReFxNUQtkixZtbZ+TBLiU="
+        }
+      ]
+    },
+    {
+      "Route": "css/homepage.dzwxh967iq.css",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\homepage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ObrjW36N8QMS2rQf6T+3ppReFxNUQtkixZtbZ+TBLiU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 05:27:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dzwxh967iq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/homepage.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ObrjW36N8QMS2rQf6T+3ppReFxNUQtkixZtbZ+TBLiU="
         }
       ]
     },
@@ -25063,6 +26441,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-WMPin7wDLhHhUOIfsGYR0T1ze/a1RrbiFvE018uzII0="
+        }
+      ]
+    },
+    {
+      "Route": "img/banner-about-2.0v7jzl5368.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\banner-about-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1016240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jDXKsFQNDSVNsc+3Zm/EYJSyE3xUK9McMY/A0P1TQWo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0v7jzl5368"
+        },
+        {
+          "Name": "label",
+          "Value": "img/banner-about-2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jDXKsFQNDSVNsc+3Zm/EYJSyE3xUK9McMY/A0P1TQWo="
+        }
+      ]
+    },
+    {
+      "Route": "img/banner-about-2.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\banner-about-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1016240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jDXKsFQNDSVNsc+3Zm/EYJSyE3xUK9McMY/A0P1TQWo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jDXKsFQNDSVNsc+3Zm/EYJSyE3xUK9McMY/A0P1TQWo="
+        }
+      ]
+    },
+    {
+      "Route": "img/BG (3).bxmbc3lsxg.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171320"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Me9HEWxzjqa4DsJ1h8UryOyqSfAQmqGU+3yj0osc0GA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxmbc3lsxg"
+        },
+        {
+          "Name": "label",
+          "Value": "img/BG (3).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Me9HEWxzjqa4DsJ1h8UryOyqSfAQmqGU+3yj0osc0GA="
+        }
+      ]
+    },
+    {
+      "Route": "img/BG (3).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171320"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Me9HEWxzjqa4DsJ1h8UryOyqSfAQmqGU+3yj0osc0GA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Me9HEWxzjqa4DsJ1h8UryOyqSfAQmqGU+3yj0osc0GA="
+        }
+      ]
+    },
+    {
+      "Route": "img/BG (4).iz5kf1cor0.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"stFAPt05g/jxWcnBEFW+9tXwCi83wEomVomitti3mgU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iz5kf1cor0"
+        },
+        {
+          "Name": "label",
+          "Value": "img/BG (4).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-stFAPt05g/jxWcnBEFW+9tXwCi83wEomVomitti3mgU="
+        }
+      ]
+    },
+    {
+      "Route": "img/BG (4).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"stFAPt05g/jxWcnBEFW+9tXwCi83wEomVomitti3mgU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-stFAPt05g/jxWcnBEFW+9tXwCi83wEomVomitti3mgU="
         }
       ]
     },
@@ -26297,6 +27921,88 @@
       ]
     },
     {
+      "Route": "img/chuaodo.axqvpdi4p2.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\chuaodo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "382395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8jjl5eW8NpCEp7ai06qAeuoZ5Mlxw9nELHRx4qew+Ec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "axqvpdi4p2"
+        },
+        {
+          "Name": "label",
+          "Value": "img/chuaodo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8jjl5eW8NpCEp7ai06qAeuoZ5Mlxw9nELHRx4qew+Ec="
+        }
+      ]
+    },
+    {
+      "Route": "img/chuaodo.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\chuaodo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "382395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8jjl5eW8NpCEp7ai06qAeuoZ5Mlxw9nELHRx4qew+Ec=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8jjl5eW8NpCEp7ai06qAeuoZ5Mlxw9nELHRx4qew+Ec="
+        }
+      ]
+    },
+    {
       "Route": "img/comment-icon.5ttblzthqq.svg",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\comment-icon.svg",
       "Selectors": [],
@@ -26375,6 +28081,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-V+M/FozkrBqTJmw5f4kXJ/O6WWnFQR0Hh2q2RjFddv0="
+        }
+      ]
+    },
+    {
+      "Route": "img/delivery-truck.h46tdsf76c.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\delivery-truck.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QZE3n/eu8TYgcEQusJOjaFGcttaQEn0AeHg6psUAxU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h46tdsf76c"
+        },
+        {
+          "Name": "label",
+          "Value": "img/delivery-truck.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QZE3n/eu8TYgcEQusJOjaFGcttaQEn0AeHg6psUAxU4="
+        }
+      ]
+    },
+    {
+      "Route": "img/delivery-truck.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\delivery-truck.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QZE3n/eu8TYgcEQusJOjaFGcttaQEn0AeHg6psUAxU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QZE3n/eu8TYgcEQusJOjaFGcttaQEn0AeHg6psUAxU4="
+        }
+      ]
+    },
+    {
+      "Route": "img/desktop.651meiqd0o.ini",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\desktop.ini",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SuV2UWQUvPdQqBzmkz0tun7g26DrRr5eQ8499ceCWZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 05:55:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "651meiqd0o"
+        },
+        {
+          "Name": "label",
+          "Value": "img/desktop.ini"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SuV2UWQUvPdQqBzmkz0tun7g26DrRr5eQ8499ceCWZo="
+        }
+      ]
+    },
+    {
+      "Route": "img/desktop.ini",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\desktop.ini",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SuV2UWQUvPdQqBzmkz0tun7g26DrRr5eQ8499ceCWZo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 03 May 2025 05:55:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SuV2UWQUvPdQqBzmkz0tun7g26DrRr5eQ8499ceCWZo="
         }
       ]
     },
@@ -26789,6 +28659,662 @@
       ]
     },
     {
+      "Route": "img/Group (10).c1gaivs2b5.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (10).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sN3fca/a2TU4RbznhalxdR6BtuoReekTPZXGUU/iBoQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c1gaivs2b5"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (10).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sN3fca/a2TU4RbznhalxdR6BtuoReekTPZXGUU/iBoQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (10).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (10).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "990"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sN3fca/a2TU4RbznhalxdR6BtuoReekTPZXGUU/iBoQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sN3fca/a2TU4RbznhalxdR6BtuoReekTPZXGUU/iBoQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (11).179qp11s2y.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (11).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8+EZJB5IH1GaHhTxh45NRoYh6M5umiLueuxwLHP8OPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "179qp11s2y"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (11).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8+EZJB5IH1GaHhTxh45NRoYh6M5umiLueuxwLHP8OPE="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (11).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (11).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "821"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8+EZJB5IH1GaHhTxh45NRoYh6M5umiLueuxwLHP8OPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8+EZJB5IH1GaHhTxh45NRoYh6M5umiLueuxwLHP8OPE="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (3).ffq08ulbmw.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NSqkNpqRUVGdej4KZ2ddr4lgxEexn0RhOzoWZkGmM5s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ffq08ulbmw"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (3).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NSqkNpqRUVGdej4KZ2ddr4lgxEexn0RhOzoWZkGmM5s="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (3).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NSqkNpqRUVGdej4KZ2ddr4lgxEexn0RhOzoWZkGmM5s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NSqkNpqRUVGdej4KZ2ddr4lgxEexn0RhOzoWZkGmM5s="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (4).2stdzu4g4h.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/qydPvNh9U3SQxS7j2xii1BVVxt7/KkTCDNgNvNEmVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2stdzu4g4h"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (4).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/qydPvNh9U3SQxS7j2xii1BVVxt7/KkTCDNgNvNEmVU="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (4).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/qydPvNh9U3SQxS7j2xii1BVVxt7/KkTCDNgNvNEmVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/qydPvNh9U3SQxS7j2xii1BVVxt7/KkTCDNgNvNEmVU="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (5).2gmv3pdy6e.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YrrTI5/WIQwLerBa3REV9A85w4pAj1oVEKYZu83/d5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2gmv3pdy6e"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (5).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YrrTI5/WIQwLerBa3REV9A85w4pAj1oVEKYZu83/d5A="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (5).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YrrTI5/WIQwLerBa3REV9A85w4pAj1oVEKYZu83/d5A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YrrTI5/WIQwLerBa3REV9A85w4pAj1oVEKYZu83/d5A="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (6).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (6).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SWUBJQ/VScna2H1Zy6goeQYg7GV7DHCibvi7whLGjck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SWUBJQ/VScna2H1Zy6goeQYg7GV7DHCibvi7whLGjck="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (6).z95o2m57dp.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (6).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SWUBJQ/VScna2H1Zy6goeQYg7GV7DHCibvi7whLGjck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z95o2m57dp"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (6).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SWUBJQ/VScna2H1Zy6goeQYg7GV7DHCibvi7whLGjck="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (7).gb412zjtnq.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (7).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HOoCDYOGZOZxGT8YcS3gJcMI1wABrRwCynT9b9zsj6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gb412zjtnq"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (7).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HOoCDYOGZOZxGT8YcS3gJcMI1wABrRwCynT9b9zsj6M="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (7).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (7).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HOoCDYOGZOZxGT8YcS3gJcMI1wABrRwCynT9b9zsj6M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HOoCDYOGZOZxGT8YcS3gJcMI1wABrRwCynT9b9zsj6M="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (9).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (9).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r9Mxcgac/kulSEmAnXJGhx+WUDjVjJbGGEDaeCPnAoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r9Mxcgac/kulSEmAnXJGhx+WUDjVjJbGGEDaeCPnAoM="
+        }
+      ]
+    },
+    {
+      "Route": "img/Group (9).t9bpzdlqup.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (9).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "300"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r9Mxcgac/kulSEmAnXJGhx+WUDjVjJbGGEDaeCPnAoM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t9bpzdlqup"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Group (9).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r9Mxcgac/kulSEmAnXJGhx+WUDjVjJbGGEDaeCPnAoM="
+        }
+      ]
+    },
+    {
       "Route": "img/heart-icon.png",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\heart-icon.png",
       "Selectors": [],
@@ -26953,6 +29479,88 @@
       ]
     },
     {
+      "Route": "img/icon_about.svg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\icon_about.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FVqiTSEgoeFd4M86wJWECxx8XLtpXpJZVTPUdnUOahE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FVqiTSEgoeFd4M86wJWECxx8XLtpXpJZVTPUdnUOahE="
+        }
+      ]
+    },
+    {
+      "Route": "img/icon_about.x97x31f5i2.svg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\icon_about.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FVqiTSEgoeFd4M86wJWECxx8XLtpXpJZVTPUdnUOahE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x97x31f5i2"
+        },
+        {
+          "Name": "label",
+          "Value": "img/icon_about.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FVqiTSEgoeFd4M86wJWECxx8XLtpXpJZVTPUdnUOahE="
+        }
+      ]
+    },
+    {
       "Route": "img/icon.png",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\icon.png",
       "Selectors": [],
@@ -27031,6 +29639,990 @@
         {
           "Name": "integrity",
           "Value": "sha256-iypSkRq7rwtyr6e/cNQs7YOwktSZbSXAGvLV42Gm08Y="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (1).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25966"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2KTr5UdJ+9nF33d4QTaLum5QUZL/xgb2016lG9tQc6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2KTr5UdJ+9nF33d4QTaLum5QUZL/xgb2016lG9tQc6U="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (1).s3ao28zu0w.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25966"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2KTr5UdJ+9nF33d4QTaLum5QUZL/xgb2016lG9tQc6U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s3ao28zu0w"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (1).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2KTr5UdJ+9nF33d4QTaLum5QUZL/xgb2016lG9tQc6U="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (10).h8gw7h4kua.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (10).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaWuMhVtxCUXNAsio1a1pB48yxXDh7TT/9WJI3MriFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h8gw7h4kua"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (10).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MaWuMhVtxCUXNAsio1a1pB48yxXDh7TT/9WJI3MriFw="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (10).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (10).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MaWuMhVtxCUXNAsio1a1pB48yxXDh7TT/9WJI3MriFw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MaWuMhVtxCUXNAsio1a1pB48yxXDh7TT/9WJI3MriFw="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (11).62ppojnqf6.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (11).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hn93jdTtFEMx6vnNX/Z+XkzRwmGjiGUie1j0xcNc2yQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "62ppojnqf6"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (11).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hn93jdTtFEMx6vnNX/Z+XkzRwmGjiGUie1j0xcNc2yQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (11).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (11).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Hn93jdTtFEMx6vnNX/Z+XkzRwmGjiGUie1j0xcNc2yQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Hn93jdTtFEMx6vnNX/Z+XkzRwmGjiGUie1j0xcNc2yQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (12).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (12).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9LTUUndBQjDiTivdB6ZYU9KHzB0yovKHrYiHdfeqzQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9LTUUndBQjDiTivdB6ZYU9KHzB0yovKHrYiHdfeqzQg="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (12).s8le0ezjuk.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (12).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9LTUUndBQjDiTivdB6ZYU9KHzB0yovKHrYiHdfeqzQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s8le0ezjuk"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (12).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9LTUUndBQjDiTivdB6ZYU9KHzB0yovKHrYiHdfeqzQg="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (2).e5l3ph8amv.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (2).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LtW+LCIC9qfU9PuJm/1U3Ghz5Vpat7imF6ECxl+mAmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e5l3ph8amv"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (2).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LtW+LCIC9qfU9PuJm/1U3Ghz5Vpat7imF6ECxl+mAmM="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (2).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (2).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LtW+LCIC9qfU9PuJm/1U3Ghz5Vpat7imF6ECxl+mAmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LtW+LCIC9qfU9PuJm/1U3Ghz5Vpat7imF6ECxl+mAmM="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (3).hkvzzspy34.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b3KL3SSatD77BOincRmCnX3dKTaOcT+dFO9josltt1A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hkvzzspy34"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (3).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b3KL3SSatD77BOincRmCnX3dKTaOcT+dFO9josltt1A="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (3).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38345"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b3KL3SSatD77BOincRmCnX3dKTaOcT+dFO9josltt1A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b3KL3SSatD77BOincRmCnX3dKTaOcT+dFO9josltt1A="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (4).93rkkqprdm.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JVJSc5VO1WwMec1JgNF4e0sv9XF6M7a1BEoYrAMKiJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "93rkkqprdm"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (4).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JVJSc5VO1WwMec1JgNF4e0sv9XF6M7a1BEoYrAMKiJE="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (4).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JVJSc5VO1WwMec1JgNF4e0sv9XF6M7a1BEoYrAMKiJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JVJSc5VO1WwMec1JgNF4e0sv9XF6M7a1BEoYrAMKiJE="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (5).bwprxfegsv.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2/gfuTAG6AtLseam+wTuToYqr7D1/El0a3IBmvclXVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bwprxfegsv"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (5).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2/gfuTAG6AtLseam+wTuToYqr7D1/El0a3IBmvclXVE="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (5).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2/gfuTAG6AtLseam+wTuToYqr7D1/El0a3IBmvclXVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2/gfuTAG6AtLseam+wTuToYqr7D1/El0a3IBmvclXVE="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (6).93we1pb5g7.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (6).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C9FoSDtSZPO953ivIgrQGCuQUCdKpM+rpep0G01yIU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "93we1pb5g7"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (6).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C9FoSDtSZPO953ivIgrQGCuQUCdKpM+rpep0G01yIU4="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (6).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (6).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29344"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C9FoSDtSZPO953ivIgrQGCuQUCdKpM+rpep0G01yIU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C9FoSDtSZPO953ivIgrQGCuQUCdKpM+rpep0G01yIU4="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (7).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (7).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tfQmfMlSlXSSRdv2JxfivVM+DmmeQvH4CueKjuW7YFo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tfQmfMlSlXSSRdv2JxfivVM+DmmeQvH4CueKjuW7YFo="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (7).v7f5fo2hd6.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (7).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tfQmfMlSlXSSRdv2JxfivVM+DmmeQvH4CueKjuW7YFo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v7f5fo2hd6"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (7).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tfQmfMlSlXSSRdv2JxfivVM+DmmeQvH4CueKjuW7YFo="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (8).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (8).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wsz/yeZ3P5oRigW2QcFCUOVwwFPBTVOsg/c53WDoc0w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wsz/yeZ3P5oRigW2QcFCUOVwwFPBTVOsg/c53WDoc0w="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (8).yqhuzdkylm.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (8).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wsz/yeZ3P5oRigW2QcFCUOVwwFPBTVOsg/c53WDoc0w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yqhuzdkylm"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (8).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wsz/yeZ3P5oRigW2QcFCUOVwwFPBTVOsg/c53WDoc0w="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (9).0t58mg9ofa.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (9).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nIo3It/4NkL1YtwpPiaVMXtZnhGSRCvNdTzSJDAWnwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0t58mg9ofa"
+        },
+        {
+          "Name": "label",
+          "Value": "img/image 1 (9).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nIo3It/4NkL1YtwpPiaVMXtZnhGSRCvNdTzSJDAWnwc="
+        }
+      ]
+    },
+    {
+      "Route": "img/image 1 (9).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (9).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35014"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nIo3It/4NkL1YtwpPiaVMXtZnhGSRCvNdTzSJDAWnwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nIo3It/4NkL1YtwpPiaVMXtZnhGSRCvNdTzSJDAWnwc="
         }
       ]
     },
@@ -27199,6 +30791,88 @@
       ]
     },
     {
+      "Route": "img/leaf-2.pf7fdq991z.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\leaf-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m4cubDWYHhaX6N8Gpk6IZd6Sz2/WfFdxhJwiICvF00I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pf7fdq991z"
+        },
+        {
+          "Name": "label",
+          "Value": "img/leaf-2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m4cubDWYHhaX6N8Gpk6IZd6Sz2/WfFdxhJwiICvF00I="
+        }
+      ]
+    },
+    {
+      "Route": "img/leaf-2.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\leaf-2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m4cubDWYHhaX6N8Gpk6IZd6Sz2/WfFdxhJwiICvF00I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m4cubDWYHhaX6N8Gpk6IZd6Sz2/WfFdxhJwiICvF00I="
+        }
+      ]
+    },
+    {
       "Route": "img/link-icon.p7ql3gvum0.svg",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\link-icon.svg",
       "Selectors": [],
@@ -27277,6 +30951,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-C/WEddpUp6HXOhc+N4GLSKNg60gBtUBof2ukRAeYzyY="
+        }
+      ]
+    },
+    {
+      "Route": "img/local.b7sphq1o07.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\local.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B8Rrv25KY6Z7SnCyQZXAQ+N4qmGgpsdQes7VfAB/0iE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b7sphq1o07"
+        },
+        {
+          "Name": "label",
+          "Value": "img/local.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B8Rrv25KY6Z7SnCyQZXAQ+N4qmGgpsdQes7VfAB/0iE="
+        }
+      ]
+    },
+    {
+      "Route": "img/local.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\local.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B8Rrv25KY6Z7SnCyQZXAQ+N4qmGgpsdQes7VfAB/0iE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B8Rrv25KY6Z7SnCyQZXAQ+N4qmGgpsdQes7VfAB/0iE="
+        }
+      ]
+    },
+    {
+      "Route": "img/mail.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\mail.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JpRMJLz3RriVkp8WYtN/lj8F99iQ/NWDQ0mohqp/mRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JpRMJLz3RriVkp8WYtN/lj8F99iQ/NWDQ0mohqp/mRQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/mail.qsdg2w0wwu.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\mail.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1179"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JpRMJLz3RriVkp8WYtN/lj8F99iQ/NWDQ0mohqp/mRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qsdg2w0wwu"
+        },
+        {
+          "Name": "label",
+          "Value": "img/mail.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JpRMJLz3RriVkp8WYtN/lj8F99iQ/NWDQ0mohqp/mRQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/Map_contact.j9goe9jfbj.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Map_contact.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+oipu8agtE38jyRnuBT6fLgetWZxW7Js9pdbuenF/Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j9goe9jfbj"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Map_contact.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+oipu8agtE38jyRnuBT6fLgetWZxW7Js9pdbuenF/Y="
+        }
+      ]
+    },
+    {
+      "Route": "img/Map_contact.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Map_contact.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "340811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V+oipu8agtE38jyRnuBT6fLgetWZxW7Js9pdbuenF/Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V+oipu8agtE38jyRnuBT6fLgetWZxW7Js9pdbuenF/Y="
         }
       ]
     },
@@ -27527,6 +31447,88 @@
       ]
     },
     {
+      "Route": "img/muiten.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\muiten.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aWT/cg0NcBTkUqyTsDDTvbHn2s74sJ/DQy1JxKEC178=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aWT/cg0NcBTkUqyTsDDTvbHn2s74sJ/DQy1JxKEC178="
+        }
+      ]
+    },
+    {
+      "Route": "img/muiten.vm2x8u5a34.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\muiten.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aWT/cg0NcBTkUqyTsDDTvbHn2s74sJ/DQy1JxKEC178=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vm2x8u5a34"
+        },
+        {
+          "Name": "label",
+          "Value": "img/muiten.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aWT/cg0NcBTkUqyTsDDTvbHn2s74sJ/DQy1JxKEC178="
+        }
+      ]
+    },
+    {
       "Route": "img/no-img.h37o4pbooa.png",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\no-img.png",
       "Selectors": [],
@@ -27609,6 +31611,88 @@
       ]
     },
     {
+      "Route": "img/ongchucachua.jpg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\ongchucachua.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OC2+FzgS1qSp+OYzKG9nKgop1VRm4Ax2ubOT+I+cfBo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OC2+FzgS1qSp+OYzKG9nKgop1VRm4Ax2ubOT+I+cfBo="
+        }
+      ]
+    },
+    {
+      "Route": "img/ongchucachua.wqs1j68xv7.jpg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\ongchucachua.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OC2+FzgS1qSp+OYzKG9nKgop1VRm4Ax2ubOT+I+cfBo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wqs1j68xv7"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ongchucachua.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OC2+FzgS1qSp+OYzKG9nKgop1VRm4Ax2ubOT+I+cfBo="
+        }
+      ]
+    },
+    {
       "Route": "img/payment.png",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\payment.png",
       "Selectors": [],
@@ -27687,6 +31771,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-GVm+HyXLWA05e5xXLD7DIujbvt/uaPQBe1DyNVS/L0s="
+        }
+      ]
+    },
+    {
+      "Route": "img/phone_contact.imyh350opu.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\phone_contact.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dh8q+SFhAsnyOg5dqnav8iHU4cnx8Vj/uLyfhvdzMh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "imyh350opu"
+        },
+        {
+          "Name": "label",
+          "Value": "img/phone_contact.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dh8q+SFhAsnyOg5dqnav8iHU4cnx8Vj/uLyfhvdzMh4="
+        }
+      ]
+    },
+    {
+      "Route": "img/phone_contact.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\phone_contact.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dh8q+SFhAsnyOg5dqnav8iHU4cnx8Vj/uLyfhvdzMh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dh8q+SFhAsnyOg5dqnav8iHU4cnx8Vj/uLyfhvdzMh4="
         }
       ]
     },
@@ -28675,6 +32841,334 @@
       ]
     },
     {
+      "Route": "img/Rectangle 54 (1).dq2343kzbp.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a1/YJYH2vCu+nPYiyCozO43+M8W2220JETcMTEZ8W88=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dq2343kzbp"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Rectangle 54 (1).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-a1/YJYH2vCu+nPYiyCozO43+M8W2220JETcMTEZ8W88="
+        }
+      ]
+    },
+    {
+      "Route": "img/Rectangle 54 (1).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "198981"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"a1/YJYH2vCu+nPYiyCozO43+M8W2220JETcMTEZ8W88=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-a1/YJYH2vCu+nPYiyCozO43+M8W2220JETcMTEZ8W88="
+        }
+      ]
+    },
+    {
+      "Route": "img/Rectangle 54 (2).mo2zkqu0on.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (2).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178504"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VhTWY5f09E1dAJvoh2OApIdbqRWKqF0PAe/PHyOhv00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mo2zkqu0on"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Rectangle 54 (2).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VhTWY5f09E1dAJvoh2OApIdbqRWKqF0PAe/PHyOhv00="
+        }
+      ]
+    },
+    {
+      "Route": "img/Rectangle 54 (2).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (2).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178504"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VhTWY5f09E1dAJvoh2OApIdbqRWKqF0PAe/PHyOhv00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VhTWY5f09E1dAJvoh2OApIdbqRWKqF0PAe/PHyOhv00="
+        }
+      ]
+    },
+    {
+      "Route": "img/Rectangle 54.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3lA/K4XSiyGWXFZgHGHShDWplMZt4HO/t87J35hfyss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3lA/K4XSiyGWXFZgHGHShDWplMZt4HO/t87J35hfyss="
+        }
+      ]
+    },
+    {
+      "Route": "img/Rectangle 54.qe5bv4vzq5.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "411299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3lA/K4XSiyGWXFZgHGHShDWplMZt4HO/t87J35hfyss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qe5bv4vzq5"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Rectangle 54.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3lA/K4XSiyGWXFZgHGHShDWplMZt4HO/t87J35hfyss="
+        }
+      ]
+    },
+    {
+      "Route": "img/Rectangle.j0xn6gfr5z.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HUMXbrj3QWGxlbxQzXN0StHlui4/LpSWT+9vMhuj1cw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j0xn6gfr5z"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Rectangle.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HUMXbrj3QWGxlbxQzXN0StHlui4/LpSWT+9vMhuj1cw="
+        }
+      ]
+    },
+    {
+      "Route": "img/Rectangle.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HUMXbrj3QWGxlbxQzXN0StHlui4/LpSWT+9vMhuj1cw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HUMXbrj3QWGxlbxQzXN0StHlui4/LpSWT+9vMhuj1cw="
+        }
+      ]
+    },
+    {
       "Route": "img/search-icon.png",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\search-icon.png",
       "Selectors": [],
@@ -28839,6 +33333,88 @@
       ]
     },
     {
+      "Route": "img/shopping-bag.gcu07rysn4.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\shopping-bag.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "886"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YJO2TOyvt1KJR08XOIwgGwc0gcv9GKaWEM0neJVou8w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gcu07rysn4"
+        },
+        {
+          "Name": "label",
+          "Value": "img/shopping-bag.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJO2TOyvt1KJR08XOIwgGwc0gcv9GKaWEM0neJVou8w="
+        }
+      ]
+    },
+    {
+      "Route": "img/shopping-bag.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\shopping-bag.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "886"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YJO2TOyvt1KJR08XOIwgGwc0gcv9GKaWEM0neJVou8w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJO2TOyvt1KJR08XOIwgGwc0gcv9GKaWEM0neJVou8w="
+        }
+      ]
+    },
+    {
       "Route": "img/star.2rtg8np787.svg",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\star.svg",
       "Selectors": [],
@@ -28921,6 +33497,88 @@
       ]
     },
     {
+      "Route": "img/stars-1.4x7ryzbkey.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\stars-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KCEYRnhGBCylPvY+iSFIqj3kYiUISfQOv6lOQ2t27O0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4x7ryzbkey"
+        },
+        {
+          "Name": "label",
+          "Value": "img/stars-1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KCEYRnhGBCylPvY+iSFIqj3kYiUISfQOv6lOQ2t27O0="
+        }
+      ]
+    },
+    {
+      "Route": "img/stars-1.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\stars-1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "876"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KCEYRnhGBCylPvY+iSFIqj3kYiUISfQOv6lOQ2t27O0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KCEYRnhGBCylPvY+iSFIqj3kYiUISfQOv6lOQ2t27O0="
+        }
+      ]
+    },
+    {
       "Route": "img/tag-icon.nwn5gg737j.svg",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\tag-icon.svg",
       "Selectors": [],
@@ -28999,6 +33657,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-R4i/clVNSF1a50qo/ppNwuepJL+CHfaWvCUmSssE0Ek="
+        }
+      ]
+    },
+    {
+      "Route": "img/tick_about.d2ncy3g8ob.svg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\tick_about.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O7IIgNb+rkayruUtmm6cpLs/XPzypL8+l6dS6GEYtDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d2ncy3g8ob"
+        },
+        {
+          "Name": "label",
+          "Value": "img/tick_about.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O7IIgNb+rkayruUtmm6cpLs/XPzypL8+l6dS6GEYtDY="
+        }
+      ]
+    },
+    {
+      "Route": "img/tick_about.svg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\tick_about.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O7IIgNb+rkayruUtmm6cpLs/XPzypL8+l6dS6GEYtDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O7IIgNb+rkayruUtmm6cpLs/XPzypL8+l6dS6GEYtDY="
         }
       ]
     },
@@ -29495,6 +34235,334 @@
       ]
     },
     {
+      "Route": "img/Vector (4).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LxMmdx4DGeK8I27fe3YUZcOoFoKi2zm4KxKi3vvMVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6LxMmdx4DGeK8I27fe3YUZcOoFoKi2zm4KxKi3vvMVw="
+        }
+      ]
+    },
+    {
+      "Route": "img/Vector (4).snwneoxoh1.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (4).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "228"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6LxMmdx4DGeK8I27fe3YUZcOoFoKi2zm4KxKi3vvMVw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "snwneoxoh1"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Vector (4).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6LxMmdx4DGeK8I27fe3YUZcOoFoKi2zm4KxKi3vvMVw="
+        }
+      ]
+    },
+    {
+      "Route": "img/Vector (5).kspl0poprj.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LMZBhz7PhobNOIB2Si1wcm+jsxz63ij4AqOnXYpfnQ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kspl0poprj"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Vector (5).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LMZBhz7PhobNOIB2Si1wcm+jsxz63ij4AqOnXYpfnQ8="
+        }
+      ]
+    },
+    {
+      "Route": "img/Vector (5).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (5).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LMZBhz7PhobNOIB2Si1wcm+jsxz63ij4AqOnXYpfnQ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LMZBhz7PhobNOIB2Si1wcm+jsxz63ij4AqOnXYpfnQ8="
+        }
+      ]
+    },
+    {
+      "Route": "img/Vector (6).abny64kq1j.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (6).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "921"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hsCJ0pbXQ5piYZPQI71iAl4EIte6urHTlJCjxoMixE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "abny64kq1j"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Vector (6).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hsCJ0pbXQ5piYZPQI71iAl4EIte6urHTlJCjxoMixE8="
+        }
+      ]
+    },
+    {
+      "Route": "img/Vector (6).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (6).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "921"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hsCJ0pbXQ5piYZPQI71iAl4EIte6urHTlJCjxoMixE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hsCJ0pbXQ5piYZPQI71iAl4EIte6urHTlJCjxoMixE8="
+        }
+      ]
+    },
+    {
+      "Route": "img/Vector (7).4b5nzdlk28.png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (7).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1081"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YN6o2x+X1MeLDFrrUZD+EdMOMfTIaUGyl9WG+lg9iXE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4b5nzdlk28"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Vector (7).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YN6o2x+X1MeLDFrrUZD+EdMOMfTIaUGyl9WG+lg9iXE="
+        }
+      ]
+    },
+    {
+      "Route": "img/Vector (7).png",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (7).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1081"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YN6o2x+X1MeLDFrrUZD+EdMOMfTIaUGyl9WG+lg9iXE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YN6o2x+X1MeLDFrrUZD+EdMOMfTIaUGyl9WG+lg9iXE="
+        }
+      ]
+    },
+    {
       "Route": "img/Video.mwmbp49cie.png",
       "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Video.png",
       "Selectors": [],
@@ -29655,6 +34723,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-HQR4X4+PzYA0F/iF0Aew+jbfmHen1UWrrON3TW0yD20="
+        }
+      ]
+    },
+    {
+      "Route": "img/z5380488750276_46c393994d450b59e11fc229af8cd9d5.clqc59e4ev.jpg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YCWx7/rteNSySNIWUjfqlDt6+FBL0mYujdtJn9eCFkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "clqc59e4ev"
+        },
+        {
+          "Name": "label",
+          "Value": "img/z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YCWx7/rteNSySNIWUjfqlDt6+FBL0mYujdtJn9eCFkk="
+        }
+      ]
+    },
+    {
+      "Route": "img/z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg",
+      "AssetFile": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YCWx7/rteNSySNIWUjfqlDt6+FBL0mYujdtJn9eCFkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 May 2024 05:47:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YCWx7/rteNSySNIWUjfqlDt6+FBL0mYujdtJn9eCFkk="
         }
       ]
     },
@@ -117421,7 +122571,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 03:07:04 GMT"
+          "Value": "Sat, 03 May 2025 07:32:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117466,7 +122616,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 03:07:04 GMT"
+          "Value": "Sat, 03 May 2025 07:32:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117511,7 +122661,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 03:07:04 GMT"
+          "Value": "Sat, 03 May 2025 07:32:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -117548,7 +122698,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 03 May 2025 03:07:04 GMT"
+          "Value": "Sat, 03 May 2025 07:32:10 GMT"
         },
         {
           "Name": "Cache-Control",

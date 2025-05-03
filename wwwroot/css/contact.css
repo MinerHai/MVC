@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.wrapper_contact {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact_containner {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 30px; /* Space between the two main sections */
+    max-width: 1200px;
+    margin: 40px auto; /* Center the container */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(184, 182, 182, 0.5);
+    padding: 30px;
+}
+
+/* Contact Info Section */
+.contact_content {
+    flex: 1; /* Allow this section to grow */
+    min-width: 300px; /* Minimum width before wrapping */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(124, 121, 121, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distribute space evenly */
+}
+
+.contact_text {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+}
+
+.contact_text:hover {
+    cursor: pointer;
+    background-color: #e9f7ef; /* Lighter green hover */
+    transform: translateY(-5px); /* Subtle lift effect */
+}
+
+.contact_icon {
+    margin-right: 15px;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.contact_icon img {
+    width: 30px; /* Adjust icon size */
+    height: auto;
+}
+
+.contact_name {
+    font-size: 1rem; /* Use rem for better accessibility */
+    font-weight: 400;
+    color: #555;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 10px 0;
+}
+
+/* Contact Form Section */
+.contact_table {
+    flex: 2; /* Allow this section to grow more */
+    min-width: 400px; /* Minimum width before wrapping */
+    padding: 20px;
+}
+
+.contact_table_content h1 {
+    font-weight: 600;
+    font-size: 2rem; /* Adjust font size */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact_table_content p {
+    color: #808080;
+    font-size: 0.9rem; /* Adjust font size */
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contact_alltable {
+    margin-bottom: 20px;
+}
+
+.contact_table_input {
+    display: flex;
+    gap: 20px; /* Space between name and email inputs */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow inputs to wrap */
+    width: 100%; /* Ensure the flex container takes full width */
+}
+
+.contact_table_input_name {
+    flex: 1 1 48%; /* Allow inputs to grow, shrink, and set a base width */
+    min-width: 250px; /* Minimum width for inputs */
+}
+
+.input_table_contact,
+.input_table_contact_subject {
+    width: 100%; /* Make inputs take full width of their container */
+    padding: 12px 15px;
+    border: 1px solid #dcd6d6;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: border-color 0.3s ease;
+    display: block; /* Ensure inputs are block level */
+}
+
+.input_table_contact::placeholder,
+.input_table_contact_subject::placeholder {
+    color: #aaa;
+}
+
+.input_table_contact:focus,
+.input_table_contact_subject:focus {
+    outline: none;
+    border-color: #00B207; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(0, 178, 7, 0.3);
+}
+
+.contact_table_input_hello,
+.contact_table_input_subject {
+    margin-bottom: 20px;
+    width: 100%; /* Ensure these containers also take full width */
+}
+
+.contact_table_input_subject .input_table_contact_subject {
+    height: 120px; /* Adjust height for message area */
+    resize: vertical; /* Allow vertical resizing */
+    width: 100%; /* Ensure the subject input takes full width */
+}
+
+
+.contact_button {
+    display: inline-block; /* Make it an inline block to center */
+    background-color: #00B207;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-color: white; /* Remove default button border */
+}
+
+.contact_button:hover {
+    background-color: #008000; /* Darker green on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+.button {
+    /* This div inside contact_button is not necessary, can be removed from HTML */
+    /* Keeping styles here for now but recommend removing the div */
+    color: white;
+    font-family: poppins;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Map Image */
+.image {
+    margin-top: 40px;
+    text-align: center; /* Center the image */
+}
+
+.image img {
+    width: 100%;
+    max-width: 1200px; /* Limit max width */
+    height: auto;
+    display: block; /* Remove extra space below image */
+    margin: 0 auto; /* Center the image */
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(124, 121, 121, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact_containner {
+        flex-direction: column; /* Stack sections vertically */
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .contact_content,
+    .contact_table {
+        min-width: unset; /* Remove minimum width */
+        width: 100%; /* Take full width */
+    }
+
+    .contact_table_input {
+        flex-direction: column; /* Stack name and email inputs */
+        gap: 15px;
+    }
+
+    .contact_table_input_name {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .contact_table_content h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact_table_content p {
+        font-size: 0.85rem;
+    }
+
+    .contact_button {
+        width: 100%; /* Full width button */
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact_containner {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .contact_content {
+        padding: 15px;
+    }
+
+    .contact_table {
+        padding: 15px;
+    }
+
+    .contact_table_content h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact_table_content p {
+        font-size: 0.8rem;
+    }
+
+    .input_table_contact,
+    .input_table_contact_subject {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .contact_button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

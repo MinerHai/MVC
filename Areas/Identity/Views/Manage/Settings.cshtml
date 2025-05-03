@@ -1,0 +1,13 @@
+@using App.Models.Orders
+@using Microsoft.IdentityModel.Tokens
+@model IndexViewModel
+@{
+    ViewData["Title"] = "Quản lý tài khoản của bạn";
+    var user = ViewData["User"] as AppUser ?? new AppUser();
+    var profileModel = ViewData["EditProfileModel"] as AccountProfileModel;
+    var billingAddressModel = ViewData["BillingAddressModel"] as BillingAdressModel;
+    var orders = ViewData["Orders"] as List<OrderModel>;
+}
+<partial name="_EditProfilePartial" model="profileModel" />
+<partial name="_BillingAdressPartial" model="billingAddressModel" />
+<hr>

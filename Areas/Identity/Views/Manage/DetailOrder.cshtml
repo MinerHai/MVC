@@ -1,0 +1,94 @@
+@model App.Models.Orders.OrderModel
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng #" + Model.Id;
+    
+}
+
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1 class=""> Chi tiết đơn hàng #@Model.Id </h1>
+    </div>
+</div>
+<hr />
+<div class="app-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Thông tin khách hàng</h4>
+                <dl class="row">
+                    <dt class="col-sm-4">Tên KH:</dt>
+                    <dd class="col-sm-8">@((Model.FirstName + " " + Model.LastName).Trim() ?? Model.User?.UserName ??
+                                                "N/A")</dd>
+
+                    <dt class="col-sm-4">Email:</dt>
+                    <dd class="col-sm-8">@(Model.Email ?? Model.User?.Email ?? "N/A")</dd>
+
+                    <dt class="col-sm-4">Điện thoại:</dt>
+                    <dd class="col-sm-8">@(Model.Phone ?? Model.User?.PhoneNumber ?? "N/A")</dd>
+
+                    <dt class="col-sm-4">Địa chỉ:</dt>
+                    <dd class="col-sm-8">@Model.StreetAddress</dd>
+
+                    <dt class="col-sm-4">Thành phố:</dt>
+                    <dd class="col-sm-8">@Model.City</dd>
+
+                    <dt class="col-sm-4">Mã bưu điện:</dt>
+                    <dd class="col-sm-8">@Model.ZipCode</dd>
+                </dl>
+            </div>
+
+            <div class="col-md-8">
+                <h4>Thông tin đơn hàng</h4>
+                <dl class="row">
+                    <dt class="col-sm-3">Ngày đặt:</dt>
+                    <dd class="col-sm-9">@Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                    <dt class="col-sm-3">Trạng thái:</dt>
+                    <dd class="col-sm-9">@Model.Status</dd>
+
+                    <dt class="col-sm-3">Thanh toán:</dt>
+                    <dd class="col-sm-9">
+                        @if (Model.IsPaid)
+                        {
+                            <span class="badge badge-success text-black">Đã thanh toán</span>
+                        }
+                        else
+                        {
+                            <span class="badge badge-warning text-black">Chưa thanh toán</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-3">Tổng tiền:</dt>
+                    <dd class="col-sm-9"><strong>@Model.TotalAmount.ToString("n0") đ</strong></dd>
+                </dl>
+
+                <h4>Chi tiết sản phẩm</h4>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.OrderItems)
+                        {
+                            <tr>
+                                <td>@(item.Product?.Title ?? "Sản phẩm không tồn tại")</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.UnitPrice.ToString("n0") đ</td>
+                                <td>@((item.Quantity * item.UnitPrice).ToString("n0")) đ</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index" asp-area="Identity" asp-controller="Manage" class="btn btn-secondary">Quay lại danh sách</a>
+        </div>
+    </div>
+</div>

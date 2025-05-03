@@ -9,8 +9,24 @@
       "PackagePath": "staticwebassets\\Uploads\\Posts\\wmbmhr14.jpg"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\about-page.css",
+      "PackagePath": "staticwebassets\\css\\about-page.css"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\blog.css",
       "PackagePath": "staticwebassets\\css\\blog.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\homepage.css",
+      "PackagePath": "staticwebassets\\css\\homepage.css"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\css\\layout.css",
@@ -41,8 +57,84 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (3).png",
+      "PackagePath": "staticwebassets\\img\\BG (3).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\BG (4).png",
+      "PackagePath": "staticwebassets\\img\\BG (4).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (10).png",
+      "PackagePath": "staticwebassets\\img\\Group (10).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (11).png",
+      "PackagePath": "staticwebassets\\img\\Group (11).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (3).png",
+      "PackagePath": "staticwebassets\\img\\Group (3).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (4).png",
+      "PackagePath": "staticwebassets\\img\\Group (4).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (5).png",
+      "PackagePath": "staticwebassets\\img\\Group (5).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (6).png",
+      "PackagePath": "staticwebassets\\img\\Group (6).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (7).png",
+      "PackagePath": "staticwebassets\\img\\Group (7).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Group (9).png",
+      "PackagePath": "staticwebassets\\img\\Group (9).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Map_contact.png",
+      "PackagePath": "staticwebassets\\img\\Map_contact.png"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rating.png",
       "PackagePath": "staticwebassets\\img\\Rating.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (1).png",
+      "PackagePath": "staticwebassets\\img\\Rectangle 54 (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54 (2).png",
+      "PackagePath": "staticwebassets\\img\\Rectangle 54 (2).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle 54.png",
+      "PackagePath": "staticwebassets\\img\\Rectangle 54.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Rectangle.png",
+      "PackagePath": "staticwebassets\\img\\Rectangle.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (4).png",
+      "PackagePath": "staticwebassets\\img\\Vector (4).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (5).png",
+      "PackagePath": "staticwebassets\\img\\Vector (5).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (6).png",
+      "PackagePath": "staticwebassets\\img\\Vector (6).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Vector (7).png",
+      "PackagePath": "staticwebassets\\img\\Vector (7).png"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\Video.png",
@@ -67,6 +159,10 @@
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\arrow-right.svg",
       "PackagePath": "staticwebassets\\img\\arrow-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\banner-about-2.png",
+      "PackagePath": "staticwebassets\\img\\banner-about-2.png"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\blog-1.png",
@@ -129,8 +225,20 @@
       "PackagePath": "staticwebassets\\img\\chevron-down.svg"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\chuaodo.png",
+      "PackagePath": "staticwebassets\\img\\chuaodo.png"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\comment-icon.svg",
       "PackagePath": "staticwebassets\\img\\comment-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\delivery-truck.png",
+      "PackagePath": "staticwebassets\\img\\delivery-truck.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\desktop.ini",
+      "PackagePath": "staticwebassets\\img\\desktop.ini"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\discount-banner-bg.png",
@@ -165,6 +273,58 @@
       "PackagePath": "staticwebassets\\img\\icon.png"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\icon_about.svg",
+      "PackagePath": "staticwebassets\\img\\icon_about.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (1).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (1).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (10).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (10).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (11).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (11).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (12).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (12).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (2).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (2).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (3).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (3).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (4).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (4).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (5).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (5).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (6).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (6).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (7).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (7).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (8).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (8).png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\image 1 (9).png",
+      "PackagePath": "staticwebassets\\img\\image 1 (9).png"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\instagram-icon.svg",
       "PackagePath": "staticwebassets\\img\\instagram-icon.svg"
     },
@@ -173,8 +333,20 @@
       "PackagePath": "staticwebassets\\img\\leaf-1.png"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\leaf-2.png",
+      "PackagePath": "staticwebassets\\img\\leaf-2.png"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\link-icon.svg",
       "PackagePath": "staticwebassets\\img\\link-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\local.png",
+      "PackagePath": "staticwebassets\\img\\local.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\mail.png",
+      "PackagePath": "staticwebassets\\img\\mail.png"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\map_pin.png",
@@ -189,8 +361,16 @@
       "PackagePath": "staticwebassets\\img\\minus.svg"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\muiten.png",
+      "PackagePath": "staticwebassets\\img\\muiten.png"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\no-img.png",
       "PackagePath": "staticwebassets\\img\\no-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\ongchucachua.jpg",
+      "PackagePath": "staticwebassets\\img\\ongchucachua.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\payment.png",
@@ -199,6 +379,10 @@
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\phone-icon.png",
       "PackagePath": "staticwebassets\\img\\phone-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\phone_contact.png",
+      "PackagePath": "staticwebassets\\img\\phone_contact.png"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\plus.svg",
@@ -249,12 +433,24 @@
       "PackagePath": "staticwebassets\\img\\search-icon.svg"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\shopping-bag.png",
+      "PackagePath": "staticwebassets\\img\\shopping-bag.png"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\star.svg",
       "PackagePath": "staticwebassets\\img\\star.svg"
     },
     {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\stars-1.png",
+      "PackagePath": "staticwebassets\\img\\stars-1.png"
+    },
+    {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\tag-icon.svg",
       "PackagePath": "staticwebassets\\img\\tag-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\tick_about.svg",
+      "PackagePath": "staticwebassets\\img\\tick_about.svg"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\user-1.png",
@@ -283,6 +479,10 @@
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\visa.png",
       "PackagePath": "staticwebassets\\img\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\img\\z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg",
+      "PackagePath": "staticwebassets\\img\\z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg"
     },
     {
       "Id": "C:\\Users\\Dell\\OneDrive\\Desktop\\Web\\MVC\\wwwroot\\js\\form.js",

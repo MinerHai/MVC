@@ -1,0 +1,239 @@
+.dashboard-navigation {
+    width: 250px; /* Adjust as needed */
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    padding-bottom: 12px;
+}
+
+.navigation-heading {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #1A1A1A;
+    padding: 24px 0px 16px 20px;
+}
+
+.account-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #666666;
+    cursor: pointer;
+}
+
+.account-links:hover {
+    background-color: #EDF2EE;
+    box-shadow: inset 3px 0px 0px 0px rgba(32, 181, 38, 1);
+    color: #1A1A1A;
+}
+
+.dashboard-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust as needed */
+}
+
+.profile-section,
+.billing-address-section,
+.order-history-section {
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 20px; /* Adjust as needed */
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    overflow: hidden; /* Cắt ảnh thừa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giúp ảnh vừa khít và giữ tỉ lệ */
+  }
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.profile-name {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #1A1A1A;
+}
+
+.profile-customer {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #808080;
+}
+
+.edit-profile {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #00B207;
+    cursor: pointer;
+    margin-left: auto; /* Pushes it to the right */
+}
+
+.billing-address-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.billing-address-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.billing-address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-name {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #1A1A1A;
+}
+
+.info-address,
+.info-email,
+.info-phone {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #666666;
+}
+
+.edit-address {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #00B207;
+    cursor: pointer;
+    align-self: flex-start; /* Align to the start of the flex container */
+}
+
+.order-history-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #1A1A1A;
+}
+
+.view-all {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #00B207;
+    cursor: pointer;
+}
+
+.order-history-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr; /* Adjust column widths as needed */
+    background-color: #F2F2F2;
+    padding: 10px 0;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1em;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #4D4D4D;
+}
+
+.heading-order-id,
+.heading-date,
+.heading-total,
+.heading-status {
+    padding-left: 10px; /* Adjust as needed */
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr; /* Match table-heading */
+    padding: 10px 0;
+    border-bottom: 1px solid #E6E6E6;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #333333;
+    align-items: center;
+}
+
+.item-order-id,
+.item-date,
+.item-total,
+.item-status {
+     padding-left: 10px; /* Adjust as needed */
+}
+
+.item-details {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #00B207;
+    cursor: pointer;
+}

@@ -11,6 +11,7 @@ using App.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Shared;
 
@@ -95,6 +96,73 @@ namespace App.Areas.Identity.Controllers
 
             };
 
+            var orders = _context.Order
+                        .Include(o => o.User)
+                        .Include(o => o.OrderItems) // Include OrderItems
+                        .Where(o => o.UserId == user.Id)
+                        .OrderByDescending(o => o.OrderDate).Take(6)
+                        .ToList(); // Materialize the query to a List
+            ViewData["Orders"] = orders;
+
+            return View(model);
+        }
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> Settings(ManageMessageId? message = null)
+        {
+            ViewData["StatusMessage"] =
+                message == ManageMessageId.ChangePasswordSuccess ? "Đã thay đổi mật khẩu."
+                : message == ManageMessageId.SetPasswordSuccess ? "Đã đặt lại mật khẩu."
+                : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
+                : message == ManageMessageId.Error ? "Có lỗi."
+                : message == ManageMessageId.AddPhoneSuccess ? "Đã thêm số điện thoại."
+                : message == ManageMessageId.RemovePhoneSuccess ? "Đã bỏ số điện thoại."
+                : "";
+
+
+            var user = await GetCurrentUserAsync();
+            ViewData["User"] = user;
+
+            var editProfileModel = new AccountProfileModel
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                PhoneNumber = user.PhoneNumber,
+                Gmail = user.Email
+            };
+            ViewData["EditProfileModel"] = editProfileModel;
+
+            var billingAddressModel = new BillingAdressModel
+            {
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                PhoneNumber = user.PhoneNumber,
+                Gmail = user.Email,
+                ZipCode = user.ZipCode,
+                City = user.City,
+                Country = user.Country,
+                StreetAdress = user.StreetAdress
+
+            };
+            ViewData["BillingAddressModel"] = billingAddressModel;
+            var model = new IndexViewModel
+            {
+                HasPassword = await _userManager.HasPasswordAsync(user),
+                PhoneNumber = await _userManager.GetPhoneNumberAsync(user),
+                TwoFactor = await _userManager.GetTwoFactorEnabledAsync(user),
+                Logins = await _userManager.GetLoginsAsync(user),
+                BrowserRemembered = await _signInManager.IsTwoFactorClientRememberedAsync(user),
+                AuthenticatorKey = await _userManager.GetAuthenticatorKeyAsync(user),
+
+            };
+
+            var orders = _context.Order
+                        .Include(o => o.User)
+                        .Include(o => o.OrderItems) // Include OrderItems
+                        .Where(o => o.UserId == user.Id)
+                        .OrderByDescending(o => o.OrderDate).Take(6)
+                        .ToList(); // Materialize the query to a List
+            ViewData["Orders"] = orders;
 
             return View(model);
         }
@@ -179,6 +247,27 @@ namespace App.Areas.Identity.Controllers
                 return View(model);
             }
             return RedirectToAction(nameof(Index), new { Message = ManageMessageId.Error });
+        }
+
+         public async Task<IActionResult> DetailOrder(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound("Không có ID được cung cấp.");
+            }
+
+            var order = await _context.Order
+                .Include(o => o.User) // Lấy thông tin người dùng
+                .Include(o => o.OrderItems) // Lấy các mục trong đơn hàng
+                    .ThenInclude(oi => oi.Product) // Lấy thông tin sản phẩm cho từng mục
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (order == null)
+            {
+                return NotFound($"Không tìm thấy đơn hàng với ID {id}.");
+            }
+
+            return View(order);
         }
 
         //GET: /Manage/ManageLogins

@@ -1,17 +1,518 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="~/css/homepage.css" />
+<div class="content mt-4">
+  <div class="homepage">
+    <div class="father-box">
+      <div class="content1">
+        <div class="homepage-linear">
+          <div class="img-home"><img src="~/img/z5380488750276_46c393994d450b59e11fc229af8cd9d5.jpg" alt=""></div>
+          <div class="box-banner">
+            <div class="bannar">
+              <div class="img-bannar">
+                <div class="">
+                  <h1>Fresh & Healthy
+                    Organic Food</h1>
+                </div>
+                <div class=""></div>
+              </div>
+              <div class="img-bannar">
+                <div class="bannar-sale">
+                  <h3>Sale up to <span class="sale-off">30% off</span></h3>
+                </div>
+                <div class="">
+                  <p>Free shipping on all your order.</p>
+                </div>
+                <a class="shop-button" asp-action="Index" asp-controller="ViewProduct" asp-area="ProductManage">
+                  <span>Shop now</span>
+                  <img src="~/img//muiten.png" alt="">
+                </a>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="boxbanner">
+        <div class="box-banner1">
+          <div class="box-img1"><img src="~/img/BG (3).png" alt=""></div>
+          <div class="box-img1-title">
+            <div>
+              <p>Summer Sale</p>
+            </div>
+            <div>
+              <h2>75% OFF</h2>
+            </div>
+            <div>
+              <p>Only Fruit & Vegetable</p>
+            </div>
+            <div class="shop-now1">
+              <div>
+                <p>Shop now</p>
+              </div>
+              <div><img src="~/img//muiten.png" alt=""></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="box-banner2">
+          <div class="box-img2"><img src="~/img/BG (4).png" alt=""></div>
+          <div class="box-img2-title">
+            <div>
+              <p>Best Deal</p>
+            </div>
+            <div>
+              <h3 style="width: 60%;justify-content: center; margin: auto;">Special Products Deal of the Month</h3>
+            </div>
+            <div class="shop-now2">
+              <div>
+                <p>Shop now</p>
+              </div>
+              <div><img src="~/img//muiten.png" alt=""></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured-banner">
+      <div class="feature">
+        <div class="box-feature">
+          <div class="feature-icon"><img src="~/img/Vector (6).png" alt=""></div>
+          <div class="feature-title">
+            <div>
+              <p style="font-weight: bold;">Free Shipping</p>
+            </div>
+            <div>
+              <p style="color: rgb(184, 184, 184);">Free shipping on all your order</p>
+            </div>
+          </div>
+        </div>
+        <div class="box-feature">
+          <div class="feature-icon"><img src="~/img/Vector (7).png" alt=""></div>
+          <div class="feature-title">
+            <div>
+              <p style="font-weight: bold;">Customer Support 24/7</p>
+            </div>
+            <div>
+              <p style="color: rgb(184, 184, 184);">Instant access to Support</p>
+            </div>
+          </div>
+        </div>
+        <div class="box-feature">
+          <div class="feature-icon"><img src="~/img/Group (10).png" alt=""></div>
+          <div class="feature-title">
+            <div>
+              <p style="font-weight: bold;">100% Secure Payment</p>
+            </div>
+            <div>
+              <p style="color: rgb(184, 184, 184);">We ensure your money is save</p>
+            </div>
+          </div>
+        </div>
+        <div class="box-feature">
+          <div class="feature-icon"><img src="~/img/Group (11).png" alt=""></div>
+          <div class="feature-title">
+            <div>
+              <p style="font-weight: bold;">Money-Back Guarantee</p>
+            </div>
+            <div>
+              <p style="color: rgb(184, 184, 184);">30 Days Money-Back Guarantee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular-categories">
+      <div class="categories-heading">
+        <div>
+          <h3 style="font-weight: bold;">Popular Categories</h3>
+        </div>
+        <div class="categories-view">
+          <div>
+            <p id="view-all">View All</p>
+          </div>
+          <div><img src="~/img//muiten.png" alt=""></div>
+        </div>
+      </div>
+      <div class="categories-container">
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (1).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Fresh Fruit</p>
+            </div>
+          </div>
+        </div>
+        <!-- Thêm các ô khác tương tự cho 6 ô -->
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (2).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Fresh Vegetables</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (3).png " alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Meat & Fish</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (4).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Snacks</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (5).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Beverages</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (6).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Beauty & Health</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (7).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Bread & Bakery</p>
+            </div>
+          </div>
+        </div>
+        <!-- Thêm các ô khác tương tự cho 6 ô -->
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (8).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Baking Needs</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (9).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Cooking</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (10).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Diabetic Food</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (11).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Dish Detergents</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (12).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Oil</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (1).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Fresh Fruit</p>
+            </div>
+          </div>
+        </div>
+        <!-- Thêm các ô khác tương tự cho 6 ô -->
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (2).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Fresh Vegetables</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (3).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Meat & Fish</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (4).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Snacks</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (5).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Beverages</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (6).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Beauty & Health</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (7).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Bread & Bakery</p>
+            </div>
+          </div>
+        </div>
+        <!-- Thêm các ô khác tương tự cho 6 ô -->
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (8).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Baking Needs</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (9).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Cooking</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (10).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Diabetic Food</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (11).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Dish Detergents</p>
+            </div>
+          </div>
+        </div>
+        <div class="categories1">
+          <div class="categories1-wrapper">
+            <div class="categories1-img"><img src="~/img/image 1 (12).png" alt=""></div>
+            <div class="categories1-title">
+              <p style="font-weight: bold;">Oil</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="advertisement">
+      <div class="advertisement-box">
+        <div class="advertisement-img"><img src="~/img/Rectangle 54.png" alt=""></div>
+        <div class="advertisement-title">
+          <div>
+            <p>Best Deals</p>
+          </div>
+          <div>
+            <h1 style="font-weight: bold;">Sale of the Month</h1>
+          </div>
+          <div class="big-time">
+            <div class="advertisement-time">
+              <div>
+                <div>
+                  <h2 id="days">00</h2>
+                </div>
+                <div>
+                  <h2>Days</h2>
+                </div>
+              </div>
+              <div>
+                <h3>:</h3>
+              </div>
+            </div>
+            <div class="advertisement-time">
+              <div>
+                <div>
+                  <h2 id="hours">02</h2>
+                </div>
+                <div>
+                  <h2>Hours</h2>
+                </div>
+              </div>
+              <div>
+                <h3>:</h3>
+              </div>
+            </div>
+            <div class="advertisement-time">
+              <div>
+                <div>
+                  <h2 id="minutes">18</h2>
+                </div>
+                <div>
+                  <h2>Mins</h2>
+                </div>
+              </div>
+              <div>
+                <h3>:</h3>
+              </div>
+            </div>
+            <div class="advertisement-time">
+              <div>
+                <div>
+                  <h2 id="seconds">46</h2>
+                </div>
+                <div>
+                  <h2>Secs</h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <a class="shop-button2" asp-action="Index" asp-controller="ViewProduct" asp-area="ProductManage">
+            <span>Shop now</span>
+            <img src="~/img//muiten.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="advertisement-box2">
+        <div class="advertisement-img2"><img src="~/img/Rectangle 54 (1).png" alt=""></div>
+        <div class="advertisement-title2">
+          <div>
+            <p>85% Fat Free</p>
+          </div>
+          <div>
+            <h1 style="font-weight: bold;">Low-Fat Meat</h1>
+          </div>
+          <div>
+            <p>Started at <span style="color: rgb(176, 134, 76);">$79.99</span></p>
+          </div>
+          <div>
+            <a class="shop-button2" asp-action="Index" asp-controller="ViewProduct" asp-area="ProductManage">
+              <span>Shop now</span>
+              <img src="~/img//muiten.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement-box3">
+        <div class="advertisement-img3"><img src="~/img/Rectangle 54 (2).png" alt=""></div>
+        <div class="advertisement-title3">
+          <div>
+            <p>Summer Sale</p>
+          </div>
+          <div>
+            <h1>100% Fresh Fruit</h1>
+          </div>
+          <div>
+            <p>Up to <span style="border: none;color: rgb(237, 190, 2); background-color: rgb(26, 26, 26);">64%
+                OFF</span></p>
+          </div>
+          <a class="shop-button2" asp-action="Index" asp-controller="ViewProduct" asp-area="ProductManage">
+            <span>Shop now</span>
+            <img src="~/img//muiten.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-@{
-  var summernote =  new App.Models.Summernote("#test");
-}
+<script>document.addEventListener("DOMContentLoaded", function () {
+    // Xử lý cho phần categories
+    var viewAllBtn1 = document.getElementById('view-all');
+    var categories = document.querySelectorAll('.categories1');
+    var viewAllState1 = 'hidden'; // Trạng thái ban đầu của nút "View All"
 
-<textarea id="test"></textarea>
-<textarea id="test2"></textarea>
-<partial name="_Summernote" model="summernote" />
+    // Ẩn các hàng sau hàng thứ 2
+    for (var i = 12; i < categories.length; i++) {
+      categories[i].style.display = 'none';
+    }
 
+    // Thêm sự kiện click cho nút "View All" của categories
+    viewAllBtn1.addEventListener('click', function () {
+      if (viewAllState1 === 'hidden') {
+        // Hiển thị tất cả các hàng
+        for (var i = 2; i < categories.length; i++) {
+          categories[i].style.display = 'flex'; // Sử dụng 'flex' để hiển thị
+        }
+        // Cập nhật trạng thái của nút "View All" và thay đổi văn bản
+        viewAllState1 = 'visible';
+        viewAllBtn1.textContent = 'Show Less';
+      } else {
+        // Ẩn các hàng sau hàng thứ 2
+        for (var i = 12; i < categories.length; i++) {
+          categories[i].style.display = 'none';
+        }
+        // Cập nhật trạng thái của nút "View All" và thay đổi văn bản
+        viewAllState1 = 'hidden';
+        viewAllBtn1.textContent = 'View All';
+      }
+    });
+
+
+  });
+  const countdownDate = new Date("May 31, 2025 15:00:00").getTime();
+
+  const updateCountdown = () => {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in the elements with id
+    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+    // If the countdown is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.querySelector(".big-time").innerHTML = "EXPIRED";
+    }
+  };
+
+  // Update the countdown every 1 second
+  const x = setInterval(updateCountdown, 1000);
+
+  // Initial call to display the countdown immediately
+  updateCountdown();
+</script>

@@ -1,27 +1,78 @@
-﻿@using Microsoft.IdentityModel.Tokens
+﻿@using App.Models.Orders
+@using Microsoft.IdentityModel.Tokens
 @model IndexViewModel
 @{
     ViewData["Title"] = "Quản lý tài khoản của bạn";
     var user = ViewData["User"] as AppUser ?? new AppUser();
     var profileModel = ViewData["EditProfileModel"] as AccountProfileModel;
     var billingAddressModel = ViewData["BillingAddressModel"] as BillingAdressModel;
+    var orders = ViewData["Orders"] as List<OrderModel>;
 }
 
 
-@section SideBar {
-    <h1>THIS IS SIDEBAR</h1>
-}
 <h1>@ViewData["Title"].</h1>
 <p class="text-success">@ViewData["StatusMessage"]</p>
 
 <partial name="_StatusMessage" />
+<div class="dashboard-content">
+    <div class="profile-section">
+        <div class="profile-bg"></div>
+        <div class="profile-info">
+            <div class="profile-image" onclick="ClickButtonUpload()"> <img src="/contents/Users/@user.AvatarImg"></div>
+            <div class="profile-text">
+                <div class="profile-name">@user.FirstName @user.LastName</div>
+                <div class="profile-customer">Customer</div>
+            </div>
+        </div>
+        <a asp-action="Settings" asp-area="Identity" asp-controller="Manage" class="edit-profile text-decoration-none">Edit Profile</a>
+    </div>
 
+    <div class="billing-address-section">
+        <div class="billing-address-bg"></div>
+        <div class="billing-address-title">Billing Address</div>
+        <div class="billing-address-info">
+            <div class="info-name">@user.FirstName @user.LastName</div>
+            <div class="info-address">@billingAddressModel.Country @billingAddressModel.City
+                @billingAddressModel.StreetAdress </div>
+            <div class="info-email">@user.Email</div>
+            <div class="info-phone">@user.PhoneNumber</div>
+        </div>
+        <div class="edit-address">Edit Address</div>
+    </div>
+
+    <div class="order-history-section">
+        <div class="order-history-bg"></div>
+        <div class="order-history-header">
+            <div class="header-title">Recet Order History</div>
+            <div class="view-all">View All</div>
+        </div>
+        <div class="order-history-table">
+            <div class="table-heading">
+                <div class="heading-bg"></div>
+                <div class="heading-order-id">Order ID</div>
+                <div class="heading-date">Date</div>
+                <div class="heading-total">Total</div>
+                <div class="heading-status">Status</div>
+            </div>
+            @foreach (var order in orders)
+            {
+
+                <div class="order-item">
+                    <div class="item-order-id">#@order.Id</div>
+                    <div class="item-date">@order.OrderDate.ToString("d MMM, yyyy")</div>
+                    <div class="item-total">@order.TotalAmount.ToString("C") (@order.OrderItems.Count Products)</div>
+                    <div class="item-status">@order.Status</div>
+                    <a asp-action="DetailOrder" asp-area="Identity" asp-controller="Manage" asp-route-id="@order.Id" class="text-decoration-none"><div class="item-details">View Details</div> </a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
 
 
 <div>
-    <partial name="_EditProfilePartial" model="profileModel" />
-    <partial name="_BillingAdressPartial" model="billingAddressModel" />
-    <hr>
+
     <div id="box-photo-upload" class="d-flex flex-wrap photo-upload" data-id="@user.Id"></div>
     <img class="w-50 p-2 " src="/contents/Users/@user.AvatarImg">
     <input class="collapse" type="file" id="selectfileupload" onchange="AutoUploadPhoto()">
