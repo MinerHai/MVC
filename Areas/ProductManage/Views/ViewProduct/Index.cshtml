@@ -8,6 +8,14 @@
 }
 <partial name="_StatusMessage" />
 @model List<ProductModel>
+
+<form asp-controller="ViewProduct" asp-action="Index" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search products..." name="searchString" value="@ViewBag.searchString">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+</form>
+
 <section class="discount-banner">
     <div class="discount-badge">
         <span class="percentage">56%</span>
@@ -116,8 +124,8 @@
 @* @section SideBar {
     @await Component.InvokeAsync("CategoryProductSideBar", new CategoryProductSideBarData(){
     Categories = categories,
-categorySlug = categorySlug
-})
+    categorySlug = categorySlug
+    })
 } *@
 
 

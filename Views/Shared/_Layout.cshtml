@@ -43,19 +43,22 @@
                     </div>
                 </a>
                 <div class="col-8 col-md-5 text-center">
-                    <div class="d-flex align-items-center p-2">
-                        <div class="input-group">
-                            <!-- Icon bên trái -->
-                            <span class="input-group-text bg-white border-end-0">
-                                <img src="~/img/search-icon.png" alt="icon" class="me-1" height="16px">
-                            </span>
-                            <!-- Input -->
-                            <input type="text" class="form-control " placeholder="Search">
-                            <!-- Button bên phải -->
-                            <button class="btn btn-primary green-bg-color  "
-                                style="font-weight:500; border:none;">Search</button>
+                    <form asp-area="ProductManage" asp-controller="ViewProduct"
+                                asp-action="Index" method="get">
+                        <div class="d-flex align-items-center p-2">
+                            <div class="input-group">
+                                <!-- Icon bên trái -->
+                                <span class="input-group-text bg-white border-end-0">
+                                    <img src="~/img/search-icon.png" alt="icon" class="me-1" height="16px">
+                                </span>
+                                <!-- Input -->
+                                <input type="text" class="form-control " placeholder="Search" name="searchString">
+                                <!-- Button bên phải -->
+                                <button class="btn btn-primary green-bg-color  "
+                                    style="font-weight:500; border:none;" type="submit">Search</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
 
                 </div>
                 <div class="col-3 d-none d-md-flex justify-content-end align-items-center p-2">
@@ -217,3 +220,4 @@
 </body>
 
 </html>
+

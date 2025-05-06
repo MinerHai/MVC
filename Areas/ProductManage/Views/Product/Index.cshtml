@@ -13,6 +13,13 @@
 
 <div class="app-content">
     <div class="container-fluid">
+        <form asp-controller="Product" asp-action="Index" method="get" class="mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search products..." name="searchString" value="@ViewBag.searchString">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
+
         <p>
             <a asp-action="Create" class="btn btn-primary">Thêm sản phẩm</a>
         </p>

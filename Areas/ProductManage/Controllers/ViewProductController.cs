@@ -21,21 +21,39 @@ namespace MVC.Areas_Product_Controllers
 
         // GET: ViewPost
         [Route("/product/{categoryslug?}")]
-        public IActionResult Index(string? categoryslug, [FromQuery(Name = "p")] int currentPage, int pageSize)
+        public IActionResult Index(string? categoryslug, [FromQuery(Name = "p")] int currentPage, int pageSize, string? searchString)
         {
             var categories = GetCategories();
             ViewBag.categories = categories;
             ViewBag.categorySlug = categoryslug;
-            if (categoryslug != null)
+            ViewBag.searchString = searchString; // Pass search string to view
+
+            // Start with base query including necessary includes
+            var products = _context.Products
+                                    .Include(p => p.Author)
+                                    .Include(p => p.Photos)
+                                    .Include(p => p.ProductCategoryProducts)
+                                    .ThenInclude(pc => pc.CategoryProducts)
+                                    .AsQueryable();
+
+            // Apply search filter if searchString is provided
+            if (!string.IsNullOrEmpty(searchString))
             {
-                if (!_context.CategoryProducts.Any(p => p.Slug == categoryslug))
+                products = products.Where(p => p.Title.Contains(searchString)
+                                           || p.Description.Contains(searchString)
+                                           || p.ProductCategoryProducts.Any(pc => pc.CategoryProducts.Title.Contains(searchString) || pc.CategoryProducts.Slug.Contains(searchString)));
+            }
+            // If no searchString, apply category filter if categoryslug is provided
+            else if (!string.IsNullOrEmpty(categoryslug))
+            {
+                 if (!_context.CategoryProducts.Any(p => p.Slug == categoryslug))
                 {
                     return NotFound("Không tồn tại danh mục này!!");
                 }
+                products = products.Where(p => p.ProductCategoryProducts.Any(pc => pc.CategoryProducts.Slug == categoryslug));
             }
-            var products = GetProductsWithCategorySlug(categoryslug);
 
-            // PHAN TRANG 
+            // PHAN TRANG
 
             int totalProducts = products.Count();
             if (pageSize <= 0) pageSize = 16;

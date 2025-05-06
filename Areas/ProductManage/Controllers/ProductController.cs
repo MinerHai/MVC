@@ -33,13 +33,25 @@ namespace MVC.Areas_Product_Controllers
         }
 
         // GET: Product
-        public async Task<IActionResult> Index([FromQuery(Name = "p")] int currentPage, int pageSize)
+        public async Task<IActionResult> Index([FromQuery(Name = "p")] int currentPage, int pageSize, string? searchString)
         {
+            ViewBag.searchString = searchString; // Pass search string to view
+
             var products = _context.Products
-                                    .Include(p => p.Author)
-                                    .Include(p => p.Photos)
-                                    .Include(p => p.ProductCategoryProducts)
-                                    .ThenInclude(pc => pc.CategoryProducts);
+                                     .Include(p => p.Author)
+                                     .Include(p => p.Photos)
+                                     .Include(p => p.ProductCategoryProducts)
+                                     .ThenInclude(pc => pc.CategoryProducts)
+                                     .AsQueryable(); // Start with AsQueryable() for filtering
+
+            // Apply search filter if searchString is provided
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(p => p.Title.Contains(searchString)
+                                           || p.Description.Contains(searchString)
+                                           || p.ProductCategoryProducts.Any(pc => pc.CategoryProducts.Title.Contains(searchString) || pc.CategoryProducts.Slug.Contains(searchString)));
+            }
+
 
             int totalProducts = await products.CountAsync();
             if (pageSize <= 0) pageSize = 10;
@@ -51,14 +63,13 @@ namespace MVC.Areas_Product_Controllers
             {
                 countpages = countPages,
                 currentpage = currentPage,
-                generateUrl = (pageNumber) => Url.Action("Index", new { p = pageNumber, pageSize = pageSize })
+                generateUrl = (pageNumber) => Url.Action("Index", new { p = pageNumber, pageSize = pageSize, searchString = searchString }) // Include searchString in pagination links
             };
             ViewBag.pagingModel = pagingModel;
             ViewBag.totalProducts = totalProducts;
             var productInPage = await products.Skip((currentPage - 1) * pageSize)
                                 .Take(pageSize)
-                                .Include(p => p.ProductCategoryProducts)
-                                .ThenInclude(pc => pc.CategoryProducts).ToListAsync();
+                                .ToListAsync(); // ToListAsync() after filtering and pagination
             return View(productInPage);
         }
 
