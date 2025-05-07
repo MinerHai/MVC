@@ -1,59 +1,72 @@
 ﻿@model IEnumerable<MVC.Models.ContactModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Danh sách Liên hệ"; // Changed title
 }
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Desc)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateSent)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Desc)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateSent)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<partial name="_StatusMessage" />
+<div class="app-content-header">
+    <div class="container-fluid">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+</div>
+<hr>
+<div class="app-content">
+    <!--begin::Container-->
+    <div class="container-fluid">
+        <p>
+            <a asp-action="Create" class="btn btn-primary">Thêm liên hệ mới</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Desc)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DateSent)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Desc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DateSent)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-sm btn-info text-white">Sửa</a> |
+                            <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-sm btn-warning text-white">Chi tiết</a> |
+                            <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-sm btn-danger text-white">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        @* We can add paging here later if needed, similar to:
+        <partial name="_PagingXTL" model="@ViewBag.pagingModel" />
+        *@
+    </div>
+</div>

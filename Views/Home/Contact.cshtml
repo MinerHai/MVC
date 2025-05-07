@@ -1,69 +1,78 @@
+@model MVC.Models.ContactModel
 @{
     ViewData["Title"] = "Contact";
-    
 }
 <link rel="stylesheet" href="~/css/contact.css" />
 <div class="contact_containner">
-            <div class="contact_content">
-                <div class="contact_text">
-                    <div class="contact_icon">
-                         <img src="~/img//local.png" alt="">
-                     </div>
-                     <div class="contact_name">
-                        2715 Ash Dr.San Jose,South <br>Dakota 83475
-                     </div>
-                
-                </div>
-                <hr>
-               <div class="contact_text">
-                    <div class="contact_icon">
-                        <img src="~/img//mail.png" alt="">
-                    </div>
-                    <div class="contact_name">
-                         Proxy@gmail.com<br>Help.proxy@gmail.com
-                   </div>
-                
-               </div>
-               <hr>
-               <div class="contact_text">
-                    <div class="contact_icon"> 
-                         <img src="~/img//phone_contact.png" alt="">
-                    </div>
-                    <div class="contact_name">
-                         (219) 555-0114 <br>
-                        (164) 333-0487
-                    </div>
-               </div>
+    <div class="contact_content">
+        <div class="contact_text">
+            <div class="contact_icon">
+                <img src="~/img/local.png" alt="Location">
             </div>
-        
-            <div class="contact_table"> 
-                 <div class="contact_table_content"> 
-                    <h1>Just Say Hello!</h1>
-                    <p>Do you fancy saying hi to me or you want to get started with your <br>project and you need my help?Feel free to contact me. </p>
-                </div>
-                <div class="contact_alltable">
-                        <div class="contact_table_input">
-                            <div class="contact_table_input_name">
-                                <input type="text" placeholder="Template Cookie" class="input_table_contact name_input">
-                            </div>
-                           <div class="contact_table_input_name">
-                                <input type="text" placeholder="example@gmail.com" class="input_table_contact email_input">
-                            </div>
-                        </div>
-                        <div class="contact_table_input_hello">
-                            <input type="text" placeholder="Hello" class="input_table_contact message_input">
-                        </div>
-                        <div class="contact_table_input_subject">
-                            <input type="text" placeholder="Subjects" class="input_table_contact_subject subject_input" >
-                        </div>
-                </div>
-                <button class="contact_button">Gửi</button>
+            <div class="contact_name">
+                2715 Ash Dr.San Jose,South <br>Dakota 83475
             </div>
-    </div>
         </div>
-        <div id="messageAlert"></div>
+        <hr>
+        <div class="contact_text">
+            <div class="contact_icon">
+                <img src="~/img/mail.png" alt="Mail">
+            </div>
+            <div class="contact_name">
+                Proxy@gmail.com<br>Help.proxy@gmail.com
+            </div>
+        </div>
+        <hr>
+        <div class="contact_text">
+            <div class="contact_icon">
+                <img src="~/img/phone_contact.png" alt="Phone">
+            </div>
+            <div class="contact_name">
+                (219) 555-0114 <br>
+                (164) 333-0487
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_table">
+        <div class="contact_table_content">
+            <h1>Just Say Hello!</h1>
+            <p>Do you fancy saying hi to me or you want to get started with your <br>project and you need my help? Feel free to contact me.</p>
+        </div>
+        <form asp-controller="Home" asp-action="Contact" method="post">
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="contact_alltable">
+                <div class="contact_table_input">
+                    <div class="contact_table_input_name">
+                        <input asp-for="Name" placeholder="Your Name" class="input_table_contact name_input">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="contact_table_input_name">
+                        <input asp-for="Email" placeholder="example@gmail.com" class="input_table_contact email_input">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="contact_table_input_name">  <!-- Added for Phone -->
+                    <input asp-for="Phone" placeholder="Your Phone (Optional)" class="input_table_contact phone_input">
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="contact_table_input_subject">
+                    <textarea asp-for="Desc" placeholder="Your Message/Subject" class="input_table_contact_subject subject_input" rows="4"></textarea>
+                    <span asp-validation-for="Desc" class="text-danger"></span>
+                </div>
+            </div>
+            <button type="submit" class="contact_button">Gửi</button>
+        </form>
+    </div>
+</div>
+<div id="messageAlert"></div> <!-- This might be for client-side alerts, ensure it doesn't conflict -->
+
+<div class="image">
+    <img src="~/img/Map_contact.png" alt="Map">
 </div>
 
-    <div class="image">
-        <img src="~/img//Map_contact.png" alt="">
-   </div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
